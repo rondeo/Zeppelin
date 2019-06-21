@@ -1,0 +1,35 @@
+
+  <ons-popover id="popoverbasic" direction="down" cancelable>
+    <ons-list class="redtext">
+      <ons-list-item modifier="tappable" onclick="closeMenu('popoverbasic');goToPerfil();" class="menu-option">
+        <!--<ons-icon icon="fa-user-edit" size="20px"></ons-icon>-->
+        <ons-icon class="person-icon" fixed-width="true" style="vertical-align: middle; display: inline-block;margin: 0px 6px; width: 25px; height: 25px;"></ons-icon>
+        <p>Perfil</p>
+      </ons-list-item>
+      <!--<ons-list-item modifier="tappable" onclick="closeMenu('popoverbasic');goToPlans();" class="menu-option">
+        <ons-icon class="plan-icon-red" fixed-width="true" style="vertical-align: middle; display: inline-block;margin: 0px 6px; width: 25px; height: 25px;"></ons-icon>
+        <p>Meu Plano</p>
+      </ons-list-item>-->
+      <ons-list-item modifier="tappable" onclick="closeMenu('popoverbasic');openAppRating();" class="menu-option">
+        <ons-icon class="rate-icon-red" fixed-width="true" style="vertical-align: middle; display: inline-block;margin: 0px 6px; width: 25px; height: 25px;"></ons-icon>
+        <p>Avaliar</p>
+      </ons-list-item>
+      <ons-list-item modifier="tappable" onclick="closeMenu('popoverbasic');openIntroPopup()" class="menu-option">
+        <ons-icon icon="fa-question-circle" style="vertical-align: middle; display: inline-block;margin: 0px 6px;" size="25px"></ons-icon>
+        <p>Introdução</p>
+      </ons-list-item>
+      <ons-list-item modifier="tappable" onclick="logout();" class="menu-option">
+        <!--<ons-icon icon="fa-sign-out-alt" size="20px"></ons-icon>-->
+        <ons-icon class="sign-out-icon" fixed-width="true" style="vertical-align: middle; display: inline-block;margin: 0px 6px; width: 25px; height: 25px;"></ons-icon>
+        <p>Log Out</p>
+      </ons-list-item>
+    </ons-list>
+  </ons-popover>
+
+  <!--<ons-popover cancelable direction="down">
+    <ons-list>
+      <ons-list-item ng-repeat="option in options" modifier="tappable">
+        {{ option }}
+      </ons-list-item>
+    </ons-list>
+  </ons-popover>-->

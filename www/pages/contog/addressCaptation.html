@@ -1,0 +1,32 @@
+<ons-page class="cadastrobackground" id="addressCaptation">
+<section style="width:100% text-align:center"> <div style="text-align: center; margin-top: 0px; background-image:url('img/contog/bgsemfundo_1.png'); background-size:contain; background-repeat:no-repeat; width:100%">
+  <div style="text-align: center; margin-top: 0px; background-image:url('img/contog/bgsemfundo_2.png'); background-size:contain; background-repeat:no-repeat; width:100%; background-position: center bottom;">
+    <div>
+      <div style="float: left; width: 10%; padding: 10px;">
+        <ons-button class="redbutton transparentC" onclick="goBack()"><ons-icon icon="fa-arrow-left"></ons-icon></ons-button>
+      </div>
+      <div style="float: center; width:20%; padding:10px; text-align:center; margin-right:auto; margin-left:auto"> <img style="width:100%" src="img/contog/whitelogo.png"> </div>
+
+    </div>
+
+    <div style="width: 80%; text-align: center; margin: 10px; margin-left: auto; margin-right:auto; color: white">
+      <b style="display: inline-block; font-size: 20px; vertical-align: middle;">Especifique o Endereço:</b>
+    </div>
+
+    <div style="text-align: center;margin-top: 8px;">
+        <ons-input placeholder="CEP" class="inputc" id="update-address-zipcode" onblur="pesquisacep(this.value);"></ons-input>
+
+          <ons-input placeholder="Rua" class="inputc" id="update-address-street"></ons-input>
+          <ons-input placeholder="Número" class="inputc" id="update-address-number"></ons-input>
+          <ons-input placeholder="Complemento (Opcional)" class="inputc" id="update-address-complement"></ons-input>
+          <ons-input placeholder="Nome do Bairro" class="inputc" id="update-address-district"></ons-input>
+          <ons-input placeholder="Cidade" class="inputc" id="update-address-city"></ons-input>
+          <ons-input placeholder="Estado" class="inputc" id="update-address-state" style="text-transform: uppercase;"></ons-input>
+          <ons-input placeholder="País" class="inputc" id="update-address-country" style="text-transform: uppercase;"></ons-input>
+    </div>
+    <div style="float: right; margin: 8px;">
+      <ons-button class="gradientb" onclick="sendNewAddress();" style="margin: 8px; vertical-align: middle;"><b>Salvar Endereço</b></ons-button>
+    </div>
+  </div>
+</section>
+</ons-page>

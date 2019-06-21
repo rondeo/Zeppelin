@@ -1,0 +1,104 @@
+/* This is a CSS file */
+
+.cvv-icon {
+  font-size: 40px;
+  height: 1em;
+  background: url('../../img/contog/icons/cvv-icon-white.png') center/contain no-repeat;
+}
+
+@media only screen and (max-width: 300px) {
+  .cvv-icon {
+    font-size: 30px;
+    background-image: url('../../img/contog/icons/cvv-icon-white.png');
+  }
+}
+
+.sign-out-icon {
+  font-size: 40px;
+  height: 1em;
+  background: url('../../img/contog/icons/logout-icon-red.png') center/contain no-repeat;
+}
+
+.person-icon {
+  font-size: 40px;
+  height: 1em;
+  background: url('../../img/contog/icons/person-icon-red.png') center/contain no-repeat;
+}
+
+.home-icon {
+  font-size: 40px;
+  height: 1em;
+  background: url('../../img/contog/icons/home-icon-white.png') center/contain no-repeat;
+}
+
+.music-icon-red {
+  font-size: 40px;
+  height: 1em;
+  background: url('../../img/contog/icons/music-icon-red.png') center/contain no-repeat;
+}
+
+.play-icon-red {
+  font-size: 40px;
+  height: 1em;
+  background: url('../../img/contog/icons/play-icon-red.png') center/contain no-repeat;
+}
+
+.music-icon-white {
+  font-size: 40px;
+  height: 1em;
+  background: url('../../img/contog/icons/music-icon-white.png') center/contain no-repeat;
+}
+
+.play-icon-white {
+  font-size: 40px;
+  height: 1em;
+  background: url('../../img/contog/icons/play-icon-white.png') center/contain no-repeat;
+}
+
+.heart-outline-icon-red {
+  font-size: 40px;
+  height: 1em;
+  background: url('../../img/contog/icons/heart-outline-icon-red.png') center/contain no-repeat;
+}
+
+.heart-outline-icon-white {
+  font-size: 40px;
+  height: 1em;
+  background: url('../../img/contog/icons/heart-outline-icon-white.png') center/contain no-repeat;
+}
+
+.rate-icon-red {
+  font-size: 40px;
+  height: 1em;
+  background: url('../../img/contog/icons/rate-icon.png') center/contain no-repeat;
+}
+
+.plan-icon-red {
+  font-size: 40px;
+  height: 1em;
+  background: url('../../img/contog/icons/planos-icon-red.png') center/contain no-repeat;
+}
+
+.busca-icon-white {
+  font-size: 40px;
+  height: 1em;
+  background: url('../../img/contog/icons/busca-icon-white.png') center/contain no-repeat;
+}
+
+.favorite-icon-white {
+  font-size: 40px;
+  height: 1em;
+  background: url('../../img/contog/icons/favoritos-icon-white.png') center/contain no-repeat;
+}
+
+.favorite-icon-red {
+  font-size: 40px;
+  height: 1em;
+  background: url('../../img/contog/icons/favoritos-icon-red.png') center/contain no-repeat;
+}
+
+.config-icon-white {
+  font-size: 40px;
+  height: 1em;
+  background: url('../../img/contog/icons/configuracoes-icon-white.png') center/contain no-repeat;
+}

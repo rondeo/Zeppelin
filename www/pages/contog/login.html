@@ -1,0 +1,66 @@
+<ons-page class="cadastrobackground" id="login">
+  <section style="width:100% text-align:center"> <div style="text-align: center; margin-top: 0px; background-image:url('img/contog/bgsemfundo_1.png'); background-size:contain; background-repeat:no-repeat; width:100%">
+  <div style="text-align: center; margin-top: 0px; background-image:url('img/contog/bgsemfundo_2.png'); background-size:contain; background-repeat:no-repeat; width:100%; background-position: center bottom;">
+
+
+  <div style="width:50%; padding:10px; padding-top:20%; text-align:center; margin-right:auto; margin-left:auto"> <img style="width:100%" src="img/contog/whitelogo.png"> </div>
+
+
+
+    <div style="width:100%; margin-top:20px; padding-bottom:10px">
+
+      <form id="f_entrar_user" class="" action="" method="post">
+        <input type="hidden" name="tbl" value="user_base">
+          <input type="hidden" name="service" value="2">
+     <div style="padding-top:10px; width:50%; margin-left:auto; margin-right:auto; margin-top:10px; margin-bottom:10px;" >
+
+      <ons-input class="login-input" id="login_email" name="user_base_email" type="email" placeholder="EMAIL"></ons-input>
+
+      <p style="margin:8px"></p>
+
+      <ons-input class="login-input" id="login_senha" name="user_base_senha" type="password" placeholder="SENHA"></ons-input>
+
+      <p>
+        <ons-button class="gradientb" id="bt_entrar_user" onClick="bt_entrar_user_click();"><b>Entre!</b></ons-button>
+      </p>
+      </div>
+      </form>
+
+      <!--<p>
+        <button class="loginBtn loginBtn--facebook" onclick="bt_entrar_facebook_click();">
+          Entre com o Facebook
+        </button>
+
+        <button class="loginBtn loginBtn--google">
+          Login with Google
+        </button>
+      </p>-->
+
+     <p>
+       <ons-button style="color:white; font-size:15px" onclick="document.querySelector('#myNav').pushPage('pages/contog/forgotpassword.html');" modifier="quiet"><u>Esqueci minha senha!</u></ons-button>
+    </p>
+
+
+
+     <p>
+      <ons-button class="gradientb" onclick="goCadastro();"><b>Crie</b> a sua <b>Conta!</b></ons-button>
+    </p>
+
+
+
+    <!--<p>
+      <button style="color:white; background-color:transparent; border: 1px solid white; font-size:15px; border-radius:4px; padding:1px 25px" class="button button--outline">Sou Escritor(a)!</button>
+    </p>-->
+
+
+
+    <p>
+      <button style="color:white; font-size:10px;" class="button--quiet"><u>Desenvolvido por Conto G®</u></button>
+
+    </p>
+
+  </div>
+  </div>
+  </div>
+  </section>
+</ons-page>

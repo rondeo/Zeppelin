@@ -1,0 +1,128 @@
+#snb label::after {
+	content: attr(data-label-bottom);
+	font-family: Roboto, -apple-system, sans-serif;
+	text-transform: capitalize;
+	font-size: 11px;
+	position: absolute;
+	top: 20px;
+	left: -14px;
+	right: 0;
+	opacity: 0.75;
+	background-color: #323232;
+	color: #fff;	
+	padding: 4px;
+	border-radius: 3px;
+  display: block;
+  text-align:center;
+  width:50px;
+}
+#snb label.vertical::after {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  	top: -2px;
+	left: 14px;	
+}
+
+#snb label::before {
+	content: attr(data-label-top);
+	font-family: Roboto, -apple-system, sans-serif;
+	text-transform: capitalize;
+	font-size: 11px;
+	position: absolute;
+	top: -25px;
+	left: -14px;
+	right: 0;
+	opacity: 0.75;
+	background-color: #323232;
+	color: #fff;	
+	padding: 4px;
+	border-radius: 3px;
+  display: block;
+  text-align:center;
+  width:50px;
+}
+#snb label.vertical::before {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  	top: -2px;
+	left: -44px;	
+}
+
+input:checked + label{
+cursor:crosshair;
+
+}
+/* The switch - the box around the btn-sn */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 16px;
+  margin:20px;
+
+/*
+  width: 60px;
+  height: 34px;
+  */
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.btn-sn {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.btn-sn:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 2px;
+  bottom: 1px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .btn-sn {
+  background-color: #2196F3;
+}
+
+input:focus + .btn-sn {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .btn-sn:before {
+  -webkit-transform: translateX(12px);
+  -ms-transform: translateX(12px);
+  transform: translateX(12px);
+}
+
+/* Rounded sliders */
+.btn-sn.round {
+  border-radius: 34px;
+}
+
+.btn-sn.round:before {
+  border-radius: 50%;
+}
+
+.vertical {
+
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+
+}

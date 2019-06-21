@@ -1,0 +1,11 @@
+<ons-alert-dialog id="update-info-telefone-dialog" modifier="rowfooter">
+  <div id="update-info-telefone-title" class="alert-dialog-title"><b>Atualizar Contato</b></div>
+  <div class="alert-dialog-content" style="text-align: center;margin-top: 8px;">
+      <ons-input type="text" placeholder="DDD" style="width:20%; background-color: rgba(230, 230, 230, 0.6); padding: 2px; border-radius: 2px;" id="update-telefone-ddd"></ons-input>
+      <ons-input type="text" placeholder="Telefone" style="width:70%; background-color: rgba(230, 230, 230, 0.6); padding: 2px; border-radius: 2px;" id="update-telefone-input"></ons-input>
+  </div>
+  <div class="alert-dialog-footer">
+    <ons-alert-dialog-button onclick="hideUpdateTelefoneDialog()">Cancel</ons-alert-dialog-button>
+    <ons-alert-dialog-button onclick="sendNewTelefone();">OK</ons-alert-dialog-button>
+  </div>
+</ons-alert-dialog>

@@ -1,0 +1,104 @@
+<ons-page class="cadastrobackground" id="cadastro_1">
+<section style="width:100%; text-align:center"> <div style="text-align: center; margin-top: 0px; background-image:url('img/contog/bgsemfundo_1.png'); background-size:contain; background-repeat:no-repeat; width:100%">
+  <div style="text-align: center; margin-top: 0px; background-image:url('img/contog/bgsemfundo_2.png'); background-size:contain; background-repeat:no-repeat; width:100%; background-position: center bottom;">
+
+  <div style="width: 30%; padding: 10px;">
+    <ons-button style="background: transparent; border: 1px white solid;" onclick="fromCadastroToLogin();"><ons-icon icon="fa-arrow-left" style="padding-right: 8px;"></ons-icon> Página de Login</ons-button>
+  </div>
+
+  <div style="width:20%; padding:10px; text-align:center; margin-right:auto; margin-left:auto"> <img style="width:100%" src="img/contog/whitelogo.png"> </div>
+
+
+  <div style="color:white; font-size:13px; margin:8px"> Para acessar a plataforma é necessário fazer
+    seu cadastro, preencha as informações abaixo:
+
+  </div>
+
+  <form id="f_cadastrar_user" class="" action="" method="post">
+    <input type="hidden" name="tbl" value="user_base">
+    <input type="hidden" name="service" value="1">
+    <div>
+      <div style="color:white; font-size:17px"><strong>Digite seu nome completo</strong>
+      </div>
+      <ons-input id="cadastrar_nome" name="user_base_nome" class="inputc"></ons-input>
+
+      <div style="color:white; font-size:17px"><strong>Como prefere ser chamadx?</strong>
+      </div>
+      <ons-input id="cadastrar_pn" name="user_base_pn" class="inputc"></ons-input>
+    </div>
+
+    <div style="color:white; font-size:17px"><strong> Me identifico por:</strong>
+
+    </div>
+
+    <div class="genderradio" style="width=100%; text-align: center;">
+      <label class="gender-radio">
+        <ons-radio style="vertical-align: middle;" modifier="material" name="user_gender" checked="checked" value="F"></ons-radio>
+        Fem
+      </label>
+      <label class="gender-radio">
+        <ons-radio style="vertical-align: middle;" modifier="material" name="user_gender" value="M"></ons-radio>
+        Mas
+      </label>
+      <label class="gender-radio">
+        <ons-radio style="vertical-align: middle;" modifier="material" name="user_gender" value="N"></ons-radio>
+        Non
+      </label>
+    </div>
+
+    <div>
+      <div style="color:white; font-size:17px"><strong>Digite um e-mail válido:</strong>
+      </div>
+      <ons-input id="cadastrar_email" name="user_base_email" type="email" class="inputc"></ons-input>
+
+      <div style="color:white; font-size:17px"><strong>Escolha uma senha:</strong>
+      </div>
+      <ons-input class="inputc" id="cadastrar_senha" name="user_base_senha" type="password"></ons-input>
+    </div>
+
+   <!--<div style="margin:auto" class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+    <label class="onoffswitch-label" for="myonoffswitch">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+
+    </label>
+
+
+  </div>-->
+
+    <div style="margin-left:auto; margin-right: auto; margin-top: 10px; margin-bottom:8px;">
+      <div style="display: inline-block;">
+        <ons-switch modifier="material" name="cadastrar_age" id="age-switch"></ons-switch>
+      </div>
+      <div style="font-size:13px; color:white; margin-left:3%; margin-top:1%;display: inline-block;"> Confirmo ser maior de 18 anos </div>
+    </div>
+
+    <div style="margin-left:auto; margin-right: auto; margin-top: 10px; margin-bottom:8px;">
+      <div style="display: inline-block;">
+        <ons-switch modifier="material" name="cadastrar_term" id="term-switch"></ons-switch>
+      </div>
+      <div style="font-size:13px; color:white; margin-left:3%; margin-top:1%;display: inline-block;"> Concordo com os <b onclick="goToTerms()"><u>Termos de Uso</u></b>. </div>
+    </div>
+
+
+    <div style="width:100%; text-align:center; color:white;">
+      <ons-icon
+        icon="fa-arrow-right" size="60px" onclick="bt_cadastrar_user_click();">
+      </ons-icon>
+    </div>
+
+  </form>
+
+
+
+
+    <p>
+      <button style="color:white; font-size:10px;" class="button--quiet"><u>Desenvolvido por Conto G®</u></button>
+
+    </p>
+
+  </div>
+  </div>
+  </section>
+</ons-page>

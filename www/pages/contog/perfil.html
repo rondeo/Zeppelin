@@ -1,0 +1,296 @@
+<ons-page class="cadastrobackground" id="perfil">
+<section style="width:100% text-align:center"> <div style="text-align: center; margin-top: 0px; background-image:url('img/contog/bgsemfundo_1.png'); background-size:contain; background-repeat:no-repeat; width:100%";>
+
+   <div class="aParent">
+      <div style="float:left;margin-left:3%;margin-top:1%; vertical-align: middle; display:table;">
+        <div style="color:white; display:table-cell; font-size:20px; vertical-align: middle; margin-top: 8px;margin-right: 4px;" id="perfil-show-plan"></div>
+        <!--onclick="goToPlans();"--><ons-button modifier="quiet" style="display:table-cell;color:white;padding: 0px; padding-left:2px; padding-right:2px; font-size:16px; text-transform:lowercase; vertical-align: middle;display:none;"><!--(<u><span id="perfil-call-change-plan">trocar plano</span></u>)--></ons-button>
+      </div>
+      <div style="float:right; margin-right:3%; margin-top:1%; vertical-align: middle;">
+        <ons-button onclick="returnToMain();" style="background-color:transparent;box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);">
+          <ons-icon icon="ion-close" size="25px"></ons-icon>
+        </ons-button>
+      </div>
+   </div>
+
+
+
+    <div style="width:50%; padding:10px; padding-top:10px; text-align:center; margin-right:auto; margin-left:auto; border-radius:50%;">
+      <img style="width:100%; border: 1px solid; border-color: rgba(0, 0, 0, 0.1); border-radius:50%;" src="img/contog/avatar.png">
+    </div>
+
+    <div style="color:white">
+      <span id="perfilusercall"></span>
+    </div>
+
+
+    <section style="background-color:white">
+        <div class="center" style="color:#B20404; padding:15px; font-weight:bold; font-size: 18px">Meu perfil</div>
+          <ons-list class="listp">
+            <ons-list-item modifier="longdivider" style="color:#505050;" expandable>
+              Minhas informações
+              <div style="background-color:white" class="expandable-content">
+
+                    <ons-list>
+
+                      <div class="divinfo">
+                        <div style="display:inline-block" class="left">
+                          <ons-list-header>Nome Completo</ons-list-header>
+                            <ons-list-item><span id="perfil_nome"></span></ons-list-item>
+                        </div>
+                          <div style="display:inline-block" class="center">
+                             <ons-button style="color:grey" onclick="createUpdateDialog('Atualizar Nome', 'user_base_name', 'nome')" modifier="quiet"><ons-icon icon="fa-edit" size="15px"></ons-icon></ons-button>
+                          </div>
+                      </div>
+
+                     <!--<div style="padding:5px; background-color:grey"></div>-->
+
+                         <div class="divinfo">
+                            <div style="display: inline-block" class="center">
+                              <ons-list-header >Apelido</ons-list-header>
+                                  <ons-list-item >
+                                    <span style="display:inline-block; vertical-align: middle" id="perfil_pn"></span>
+                                      <div style="display:inline-block; vertical-align: middle; padding: 0px;" class="right">
+                                      <ons-button style="color:grey;" onclick="createUpdateDialog('Atualizar Apelido', 'user_base_pn', 'apelido')" modifier="quiet"><ons-icon icon="fa-edit" size="15px"></ons-icon></ons-button>
+                                        </div>
+                                    </ons-list-item>
+                              </div>
+                         </div>
+
+                         <div class="divinfo">
+                           <div style="display: inline-block" class="center">
+                              <ons-list-header >Data <span style="text-transform:lowercase">de</span> Nascimento</ons-list-header>
+                                    <ons-list-item>
+                                      <span id="perfil_birthdate" style="display:inline-block; vertical-align: middle"></span>
+                                      <div style="display:inline-block; vertical-align: middle; padding: 0px;" class="right">
+                                        <ons-button style="color:grey;" onclick="createUpdateDialog('Atualizar Aniversário', 'user_birthdate', 'birthdate')" modifier="quiet"><ons-icon icon="fa-edit" size="15px"></ons-icon></ons-button>
+                                      </div>
+                                    </ons-list-item>
+                              </div>
+                         </div>
+
+                        <!--<div style="padding:5px; background-color:grey"></div>-->
+
+                          <!--<div class="divinfo">
+                             <div style="display:inline-block" class="left">
+                              <ons-list-header >CPF:</ons-list-header>
+                                  <ons-list-item><span id="perfil_cpf" style="display:inline-block; vertical-align: middle">037.135.199-30</span>
+                                      <div style="display:inline-block; vertical-align: middle; padding: 0px;" class="right">
+                                      <ons-button style="color:grey;" onclick="createUpdateDialog('Atualizar CPF', 'user_base_cpf', 'cpf')" modifier="quiet"><ons-icon icon="fa-edit" size="15px"></ons-icon></ons-button>
+                                        </div>
+                                    </ons-list-item>
+                              </div>
+                              <div class="listposition-g">
+                                <ons-list-header >Celular:</ons-list-header>
+                                    <ons-list-item><span id="perfil_telefone" style="display:inline-block; vertical-align: middle">(61) 998736127</span>
+                                      <div style="display:inline-block; vertical-align: middle; padding: 0px;" class="right">
+                                        <ons-button style="color:grey;" onclick="createUpdateTelefoneDialog('user_base_telefone', 'telefone')" modifier="quiet"><ons-icon icon="fa-edit" size="15px"></ons-icon></ons-button>
+                                      </div>
+                                    </ons-list-item>
+                              </div>
+                          </div>-->
+
+                           <!--<div style="padding:5px; background-color:grey"></div>-->
+
+                             <!--<div class="divinfo">
+                                <div style="display:inline-block" class="left">
+                                  <ons-list-header >E-mail</ons-list-header>
+                                  <ons-list-item><span id="perfil_email">anaslimas80@gmail.com</span></ons-list-item>
+                                  </div>
+                                <!--<div style="display:inline-block" class="center">
+                                <ons-button style="color:grey" modifier="quiet"><ons-icon icon="fa-edit" size="15px"></ons-icon></ons-button>
+                                </div>-->
+                             <!--</div>-->
+
+                            <!--<div style="padding:5px; background-color:grey"></div>-->
+
+                             <!--<div class="divinfo">
+
+                               <div style="display:inline-block" class="center">
+                                <ons-list-header >Profissão:</ons-list-header>
+                                    <ons-list-item ><span style="display:inline-block; vertical-align: middle">Psicóloga</span>
+                                      <div style="display:inline-block; vertical-align: middle; padding: 0px;" class="right">
+                                      <ons-button style="color:grey;" modifier="quiet"><ons-icon icon="fa-edit" size="15px"></ons-icon></ons-button>
+                                        </div>
+                                    </ons-list-item>
+                                </div>
+
+                                <div class="listposition-c">
+                                <ons-list-header >Orientação Sexual:</ons-list-header>
+                                    <ons-list-item><span style="display:inline-block; vertical-align: middle">Heterossexual</span>
+                                      <div style="display:inline-block; vertical-align: middle; padding: 0px;" class="right">
+                                      <ons-button style="color:grey;" modifier="quiet"><ons-icon icon="fa-edit" size="15px"></ons-icon></ons-button>
+                                        </div>
+                                    </ons-list-item>
+                                </div>
+
+
+                                <div class="listposition-d">
+                                <ons-list-header >Plano atual:</ons-list-header>
+                                    <ons-list-item><span style="display:inline-block; vertical-align: middle">Fetish</span>
+                                      <div style="display:inline-block; vertical-align: middle; padding: 0px;" class="right">
+                                      <ons-button style="color:grey;" modifier="quiet"><ons-icon icon="fa-edit" size="15px"></ons-icon></ons-button>
+                                        </div>
+                                    </ons-list-item>
+                                </div>
+                             </div>-->
+
+
+                            <div class="divinfo">
+                            <div style="display: inline-block" class="center">
+                              <ons-list-header >Profissão</ons-list-header>
+                                  <ons-list-item >
+                                    <span id="perfil_occupation" style="display:inline-block; vertical-align: middle">Psicóloga</span>
+                                      <div style="display:inline-block; vertical-align: middle; padding: 0px;" class="right">
+                                      <ons-button style="color:grey;" onclick="createUpdateDialog('Atualizar Profissão', 'user_occupation', 'profissao')" modifier="quiet"><ons-icon icon="fa-edit" size="15px"></ons-icon></ons-button>
+                                        </div>
+                                    </ons-list-item>
+                              </div>
+                            </div>
+
+                            <!--<div class="divinfo">
+                              <div style="display: inline-block" class="center">
+                                <ons-list-header >Plano atual:</ons-list-header>
+                                    <ons-list-item><span id="perfil_plan" style="display:inline-block; vertical-align: middle">Fetish</span>
+                                      <div style="display:inline-block; vertical-align: middle; padding: 0px;" class="right">
+                                      <ons-button style="color:grey;" onclick="goToPlans();" modifier="quiet"><ons-icon icon="fa-edit" size="15px"></ons-icon></ons-button>
+                                        </div>
+                                    </ons-list-item>
+                                </div>
+                            </div>-->
+
+                            <!--<div class="divinfo">
+                                <div style="display:inline-block" class="left">
+                                  <ons-list-header >Orientação Sexual</ons-list-header>
+                                  <ons-list-item>Heterosexual</ons-list-item>
+                                  </div>
+                                <div style="display:inline-block" class="center">
+                                <ons-button style="color:grey" modifier="quiet"><ons-icon icon="fa-edit" size="15px"></ons-icon></ons-button>
+                                </div>
+                             </div>-->
+
+
+
+                            <!--<div style="padding:5px; background-color:grey"></div>-->
+
+                            <!--<div class="listdiv-b">
+                                 <div style="display:inline-block" class="left">
+                                  <ons-list-header>Dados <span style="text-transform:lowercase">do</span> cartão</ons-list-header>
+                                    <ons-list-item><span id="perfil_card_number" style="display:inline-block; vertical-align: middle">**** **** **** 7142</span>
+                                    <div style="display:inline-block; vertical-align: middle; padding: 0px;" class="right">
+                                        <ons-button style="color:grey;" modifier="quiet"><ons-icon icon="fa-edit" size="15px"></ons-icon></ons-button>
+                                          </div>
+                                      </ons-list-item>
+                                  </div>
+
+                                 <!--<div class="listposition-e">
+                                  <ons-list-header>Validade <span style="text-transform:lowercase">do</span> cartão</ons-list-header>
+                                      <ons-list-item><span id="perfil_card_validity" style="display:inline-block; vertical-align: middle">12/26</span>
+                                      <div style="display:inline-block; vertical-align: middle; padding: 0px;" class="right">
+                                      <ons-button style="color:grey;" modifier="quiet"><ons-icon icon="fa-edit" size="15px"></ons-icon></ons-button>
+                                        </div>
+                                    </ons-list-item>
+                                </div>-->
+                            <!--</div>-->
+
+
+                    </ons-list>
+
+              </div>
+            </ons-list-item>
+            <div style="padding:5px; background-color:white"></div>
+                <!--<div>
+                  <ons-list-item modifier="longdivider" style="color:#505050" >Endereço</ons-list-item>
+                  <ons-list-item modifier="longdivider" style="color:#808080; background-color:white" expandable>
+                    Preencher endereço
+                      <div class="expandable-content">
+                           <ons-list>
+                             <div class="divinfo">
+                               <div style="display:inline-block" class="left">
+                                 <ons-list-header>Rua</ons-list-header>
+                                   <ons-list-item><span id="perfil_street"></span></ons-list-item>
+                               </div>
+                             </div>
+                             <div class="divinfo">
+                               <div style="display:inline-block" class="left">
+                                 <ons-list-header>Numero</ons-list-header>
+                                   <ons-list-item><span id="perfil_number"></span></ons-list-item>
+                               </div>
+                             </div>
+                             <div class="divinfo">
+                               <div style="display:inline-block" class="left">
+                                 <ons-list-header>Complemento</ons-list-header>
+                                   <ons-list-item><span id="perfil_complement"></span></ons-list-item>
+                               </div>
+                             </div>
+                             <div class="divinfo">
+                               <div style="display:inline-block" class="left">
+                                 <ons-list-header>Bairro</ons-list-header>
+                                   <ons-list-item><span id="perfil_district"></span></ons-list-item>
+                               </div>
+                             </div>
+                             <div class="divinfo">
+                               <div style="display:inline-block" class="left">
+                                 <ons-list-header>Cidade</ons-list-header>
+                                   <ons-list-item><span id="perfil_city"></span></ons-list-item>
+                               </div>
+                             </div>
+                             <div class="divinfo">
+                               <div style="display:inline-block" class="left">
+                                 <ons-list-header>Estado</ons-list-header>
+                                   <ons-list-item><span id="perfil_state"></span></ons-list-item>
+                               </div>
+                             </div>
+                             <div class="divinfo">
+                               <div style="display:inline-block" class="left">
+                                 <ons-list-header>País</ons-list-header>
+                                   <ons-list-item><span id="perfil_country"></span></ons-list-item>
+                               </div>
+                             </div>
+                             <div class="divinfo">
+                               <div style="display:inline-block" class="left">
+                                 <ons-list-header>CEP</ons-list-header>
+                                   <ons-list-item><span id="perfil_zipcode"></span></ons-list-item>
+                               </div>
+                             </div>
+                             <ons-list-item style="text-align: right;">
+                               <ons-button onclick="createUpdateAddressDialog('user_base_endereco', 'endereco')" style="margin:10px; text-transform: capitalize; background: rgba(255, 0, 0, 0.7);">
+                                 <ons-icon icon="fa-edit" size="15px"></ons-icon>  Editar
+                               </ons-button>
+                             </ons-list-item>
+
+                           </ons-list>
+                      </div>
+                  </ons-list-item>
+                </div>-->
+                <div>
+                  <ons-list-item modifier="longdivider" style="color:#505050" >Segurança</ons-list-item>
+                  <ons-list-item modifier="longdivider" style="color:#808080; background-color:white"  expandable>Trocar senha
+                    <div style="background-color:white" class="expandable-content">
+                      <ons-list>
+                        <ons-list-item style="text-align: center;">
+                          <p style="vertical-align: middle; background-color: rgba(230, 230, 230, 0.6); padding: 2px; border-radius: 2px;">Enviar email para troca de senha?</p>
+                          <ons-button onclick="mudasenha();" style="background: rgba(255, 0, 0, 0.7);">Sim</ons-button>
+                        </ons-list-item>
+                      </ons-list>
+                    </div>
+                </div>
+                <div>
+                  <ons-list-item modifier="longdivider" style="color:#505050" >Geral</ons-list-item>
+                  <ons-list-item modifier="longdivider" style="color:#808080; background-color:white" onclick="goToTerms();" expandable>Termos de Uso</ons-list-item>
+                  <ons-list-item modifier="longdivider" style="color:#808080; background-color:white"  tappable onclick="openAppRating();">Avaliar</ons-list-item>
+                  <!--<ons-list-item modifier="longdivider" style="color:#808080; background-color:white"  expandable>Ajuda</ons-list-item>-->
+                  <!--<ons-list-item modifier="longdivider" style="color:#808080; background-color:white"  expandable>Cancelar conta</ons-list-item>-->
+                </div>
+
+          </ons-list>
+    </section>
+
+
+
+
+
+  </div>
+  </div>
+  </section>
+</ons-page>

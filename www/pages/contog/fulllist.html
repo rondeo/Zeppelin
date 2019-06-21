@@ -1,0 +1,43 @@
+      <ons-page id="fulllist">
+              <ons-toolbar class="app-toolbar">
+          <div class="left">
+            <div class="inline"><ons-toolbar-button onclick="goBack()"><ons-icon icon="fa-arrow-left" class="whitetext" style="margin-left: 4px;"></ons-icon></ons-toolbar-button></div>
+            <div class="whitetext toolbar-call inline"><strong id="fulllistpersonname" class="inline"></strong></div>
+            <div class="whitetext toolbar-call-info inline" id="fulllistpersonsign"></div>
+            <div class="whitetext toolbar-call-info inline" id="fulllistpersonstate"></div>
+          </div>
+          <div class="right">
+            <div class="whitetext toolbar-call inline"><strong id="fulllistpersonplan" class="inline"></strong></div>
+            <ons-toolbar-button  class="menu-icon" onclick="openMenu(this)">
+              <ons-icon icon="ion-navicon" size="30px"></ons-icon>
+            </ons-toolbar-button>
+          </div>
+        </ons-toolbar>
+        <section class="main-container">
+          <!--<ons-pull-hook id="pull-hook">
+            Puxe para atualizar.
+          </ons-pull-hook>-->
+              <!--<div class="selector-container">
+                  <!--<ons-select id="choose-sel-category" onchange="categorySelector(this);" class="select-app inline center">
+                    <option value="m">Categorias</option>
+                    <option value="f">Feminino</option>
+                    <option value="n">Neutro</option>
+                  </ons-select>-->
+                  <!--<ons-select id="choose-sel-filter-full"  onchange="filterSelector(this);" class="select-app inline center">
+                    <option value="">Filtros</option>
+                    <option value="s">Com Audio</option>
+                    <!--<option value="f">Gratuitos</option>-->
+                  <!--</ons-select>
+                  <ons-select id="choose-sel-order-full"  onchange="orderSelector(this);" class="select-app inline center">
+                    <option value="">Ordernar Por</option>
+                    <option value="r">Avaliação</option>
+                    <option value="v">Visualizações</option>
+                    <option value="newest">Mais Recentes</option>
+                  </ons-select>
+              </div>-->
+
+              <div id="story_fulllist">
+
+              </div>
+        </section>
+      </ons-page>

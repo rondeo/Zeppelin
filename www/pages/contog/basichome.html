@@ -1,0 +1,33 @@
+      <ons-page id="basic_home">
+        <ons-toolbar class="app-toolbar" ng-controller="DropdownController">
+          <div class="left">
+            <div class="person-img inline"><img src="img/contog/avatar.png"></img></div>
+            <div class="whitetext toolbar-call inline"><strong id="personname" class="inline"></strong></div>
+            <div class="whitetext toolbar-call-info inline" id="personsign"></div>
+            <div class="whitetext toolbar-call-info inline" id="personstate"></div>
+          </div>
+          <div class="right">
+            <div class="whitetext toolbar-call inline"><strong id="personplan" class="inline"></strong></div>
+            <ons-toolbar-button  class="menu-icon" onclick="openMenu(this)">
+              <ons-icon icon="ion-navicon" size="30px"></ons-icon>
+            </ons-toolbar-button>
+          </div>
+        </ons-toolbar>
+        <ons-tabbar position="bottom">
+          <ons-tab page="pages/contog/basichometab.html" active>
+            <ons-icon class="home-icon" fixed-width="true" style="vertical-align: middle; display: inline-block;margin: 0px 6px; width: 30px; height: 30px;"></ons-icon>
+          </ons-tab>
+          <ons-tab page="pages/contog/only_subscriber.html">
+            <ons-icon class="busca-icon-white" fixed-width="true" style="vertical-align: middle; display: inline-block;margin: 0px 6px; width: 30px; height: 30px;"></ons-icon>
+          </ons-tab>
+          <ons-tab page="pages/contog/only_subscriber.html">
+            <ons-icon class="favorite-icon-white" fixed-width="true" style="vertical-align: middle; display: inline-block;margin: 0px 6px; width: 30px; height: 30px;"></ons-icon>
+          </ons-tab>
+          <!--<ons-tab page="pages/contog/only_subscriber.html">
+            <ons-icon class="config-icon-white" fixed-width="true" style="vertical-align: middle; display: inline-block;margin: 0px 6px; width: 25px; height: 25px;"></ons-icon>
+          </ons-tab>-->
+          <ons-tab page="pages/contog/only_subscriber.html">
+            <ons-icon class="play-icon-white" fixed-width="true" style="vertical-align: middle; display: inline-block;margin: 0px 6px; width: 25px; height: 25px;"></ons-icon>
+          </ons-tab>
+        </ons-tabbar>
+      </ons-page>

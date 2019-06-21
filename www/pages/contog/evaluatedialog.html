@@ -1,0 +1,19 @@
+<ons-alert-dialog id="my-rating-dialog" modifier="rowfooter">
+    <div class="alert-dialog-title"><b>Avalie este Conto!</b></div>
+    <div class="alert-dialog-content" style="text-align: center;margin-top: 8px;">
+        <ons-button class="ratingbtn" id="starEval1" onclick="starRatingClick(1)"><ons-icon icon="fa-star"></ons-icon></ons-button>
+        <ons-button class="ratingbtn" id="starEval2" onclick="starRatingClick(2)"><ons-icon icon="fa-star"></ons-icon></ons-button>
+        <ons-button class="ratingbtn" id="starEval3" onclick="starRatingClick(3)" onhover=""><ons-icon icon="fa-star"></ons-icon></ons-button>
+        <ons-button class="ratingbtn" id="starEval4" onclick="starRatingClick(4)"><ons-icon icon="fa-star"></ons-icon></ons-button>
+        <ons-button class="ratingbtn" id="starEval5" onclick="starRatingClick(5)"><ons-icon icon="fa-star"></ons-icon></ons-button>
+      <!--</fieldset>-->
+    </div>
+    <div style="width: 90%; margin: auto; text-align: center; margin-top: 10px; margin-bottom: 10px;">
+      <!--<ons-input type="textarea" style="width: 100%" rows="5" placeholder="Comente!"></ons-input>-->
+      <textarea id="story-comment" name="storyComment" placeholder="Comente!" style="width: 100%; background: transparent; border: 1px red solid; font-size: 20px; color: rgba(255, 0, 0, 0.7); padding: 4px; box-sizing: border-box;" rows="5"></textarea>
+    </div>
+    <div class="alert-dialog-footer">
+      <ons-alert-dialog-button onclick="hideRatingDialog()">Cancel</ons-alert-dialog-button>
+      <ons-alert-dialog-button onclick="sendRating()">OK</ons-alert-dialog-button>
+    </div>
+  </ons-alert-dialog>

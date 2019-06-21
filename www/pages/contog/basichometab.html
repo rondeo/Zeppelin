@@ -1,0 +1,32 @@
+      <ons-page id="basichometab">
+
+        <section class="main-container">
+          <div class="logo-img center"><img src="img/contog/coloredlogo.png"></img></div>
+
+          <div class="selector-container">
+              <!--<ons-select id="choose-sel-category" onchange="categoryBasicSelector(this);" class="select-app inline center">
+                <option value="m">Categorias</option>
+                <option value="f">Feminino</option>
+                <option value="n">Neutro</option>
+              </ons-select>-->
+              <ons-select id="choose-sel-filter" onchange="filterBasicSelector(this);" class="select-app inline center">
+                <option value="">Filtros</option>
+                <option value="s">Com Audio</option>
+                <option value="f">Gratuitos</option>
+              </ons-select>
+              <ons-select id="choose-sel-order" onchange="orderBasicSelector(this);" class="select-app inline center">
+                <option value="">Ordernar Por</option>
+                <option value="r">Avaliação</option>
+                <option value="v">Visualizações</option>
+              </ons-select>
+          </div>
+
+          <p class="redtext centered-text">Oi <b id="userhomecall"></b>, olha aí os contos em destaque para você!</p>
+          <div id="story_list">
+          
+          </div>
+
+          </div>
+        </section>
+
+      </ons-page>

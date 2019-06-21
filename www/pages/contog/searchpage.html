@@ -1,0 +1,127 @@
+<ons-page id="searchpage">
+  <section class="main-container">
+    <!--<div class="search-container"><ons-search-input placeholder="Search"
+      onchange="updateSearch(this.value);" modifier="material"></ons-search-input></div>
+
+    <div id="searchresults" class="search-results">
+
+    </div>-->
+
+    <div id="current-refined-values">
+      <!-- CurrentRefinedValues widget will appear here -->
+    </div>
+
+    <div id="search-box" class="search-container" style="width: 100%; text-align: center; padding: 8px; box-sizing: border-box;">
+      <!-- SearchBox widget will appear here -->
+    </div>
+
+    <div id="refinement-list">
+      <!-- RefinementList widget will appear here -->
+    </div>
+
+    <div id="hits">
+      <!-- Hits widget will appear here -->
+    </div>
+
+    <div id="pagination" style="width: 100%; text-align: center;">
+      <!-- Pagination widget will appear here -->
+    </div>
+
+    <script>
+      // initialize currentRefinedValues
+      /*window.search.addWidget(
+        instantsearch.widgets.currentRefinedValues({
+          container: '#current-refined-values',
+          // This widget can also contain a clear all link to remove all filters,
+          // we disable it in this example since we use `clearAll` widget on its own.
+          clearAll: false
+        })
+      );*/
+
+      // initialize clearAll
+      /*window.search.addWidget(
+        instantsearch.widgets.clearAll({
+          container: '#clear-all',
+          templates: {
+            link: 'Reset everything'
+          },
+          autoHideContainer: false
+        })
+      );*/
+
+      // initialize pagination
+      window.search.addWidget(
+        instantsearch.widgets.pagination({
+          container: '#pagination',
+          maxPages: 20,
+          // default is to scroll to 'body', here we disable this behavior
+          scrollTo: false
+        })
+      );
+      // initialize SearchBox
+      window.search.addWidget(
+        instantsearch.widgets.searchBox({
+          container: '#search-box',
+          placeholder: 'Search for products'
+        })
+      );
+
+      // initialize RefinementList
+      /*window.search.addWidget(
+        instantsearch.widgets.refinementList({
+          container: '#refinement-list',
+          attributeName: 'categories'
+        })
+      );*/
+
+      var str = '<div class="text-container" onclick="goToPreviewPage(\'{{objectID}}\')">'+
+          '            <div class="story-description">'+
+          '              <div class="text-description inline right" style="width: 100%; margin-left: 10px; margin-right: 10px;">'+
+          '                <h4 class="redtext">{{{_highlightResult.newValue.title.value}}}</h4>'+
+          '                <div class="rating"><div class="rating-num">' +
+          '<ons-icon icon="{{r1}}"></ons-icon>'+
+          '<ons-icon icon="{{r2}}"></ons-icon>'+
+          '<ons-icon icon="{{r3}}"></ons-icon>'+
+          '<ons-icon icon="{{r4}}"></ons-icon>'+
+          '<ons-icon icon="{{r5}}"></ons-icon>'+
+          '                  <u>{{v}}</u>'+
+          '              </div></div>'+
+          '<div class="review"><p>{{{_highlightResult.newValue.description.value}}}</p></div>'+
+          '                <div style="width: 100%; vertical-align: middle;">'+
+          '                  <div class="left inline" style="width: 30%; vertical-align: middle;">'+
+          /*'                    <p class="redtext bold">Review</p>'+*/
+          '                  </div>'+
+          '                  <div class="right redtext inline" style="width: 50%; vertical-align: middle;">'+
+          //'                    <ons-icon class="music-icon-red" fixed-width="true" style="vertical-align: middle; display: inline-block;margin: 0px 2px; width: 25px; height: 25px;" size="25px"></ons-icon>'+
+          /*'                    <ons-icon class="play-icon-red" fixed-width="true" style="vertical-align: middle; display: inline-block;margin: 0px 2px; width: 25px; height: 25px;" size="25px"></ons-icon>'+
+          '                    <ons-icon class="heart-outline-icon-red" fixed-width="true" style="vertical-align: middle; display: inline-block;margin: 0px 2px; width: 25px; height: 25px;" size="25px"></ons-icon>'+*/
+          '                  </div>'+
+          '                </div>'+
+          '              </div>'+
+          '            </div>'+
+          '          </div>';
+
+      window.search.addWidget(
+        instantsearch.widgets.hits({
+          container: '#hits',
+          templates: {
+            empty: 'Sem Resultados',
+            item: str
+          },
+          transformItems: items =>
+            items.map(item => ({
+              ...item,
+              r1: getIndividualStarSource(0, item.newValue.rating, item.newValue.num_rating),
+              r2: getIndividualStarSource(1, item.newValue.rating, item.newValue.num_rating),
+              r3: getIndividualStarSource(2, item.newValue.rating, item.newValue.num_rating),
+              r4: getIndividualStarSource(3, item.newValue.rating, item.newValue.num_rating),
+              r5: getIndividualStarSource(4, item.newValue.rating, item.newValue.num_rating),
+              v: getViewsText(item.newValue.views),
+            }))
+        })
+      );
+
+      window.search.start();
+    </script>
+  </section>
+</ons-page>

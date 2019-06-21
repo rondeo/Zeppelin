@@ -1,0 +1,104 @@
+      <ons-page id="onlyreadpage">
+        <ons-toolbar class="app-toolbar">
+          <div class="left">
+            <ons-toolbar-button onclick="clearTimeout(window.viewTimeout); stopSound(); goBack();" class="whitetext toolbarBtn"><ons-icon icon="fa-arrow-left"style="margin-left: 4px;"></ons-icon></ons-toolbar-button>
+
+            <ons-toolbar-button onclick="uiIncreaseFont();" class="whitetext toolbarBtn">
+              <ons-icon icon="fa-plus" size="15px"  style="vertical-align: middle;"></ons-icon>
+              <ons-icon icon="fa-font" size="25px"  style="vertical-align: middle;"></ons-icon>
+            </ons-toolbar-button>
+            <ons-toolbar-button onclick="uiDecreaseFont();" class="whitetext toolbarBtn">
+              <ons-icon icon="fa-font" size="15px"  style="vertical-align: middle;"></ons-icon>
+              <ons-icon icon="fa-minus" size="10px" style="vertical-align: middle;"></ons-icon>
+            </ons-toolbar-button>
+          </div>
+
+          <div class="center whitetext" style="vertical-align: middle;">
+            <!--<ons-if platform="ios other">-->
+              <!--<ons-toolbar-button class="whitetext toolbarBtn">
+                <ons-icon icon="fa-music" size="25px"></ons-icon>
+              </ons-toolbar-button>-->
+
+              <ons-toolbar-button onclick="storyPlayerToggleVisibility();" class="whitetext toolbarBtn">
+                <ons-icon icon="fa-play-circle" size="25px"></ons-icon>
+              </ons-toolbar-button>
+            <!--</ons-if>-->
+          </div>
+
+          <div class="right whitetext" style="vertical-align: middle;">
+            <!--<ons-if platform="android">
+              <ons-toolbar-button class="whitetext toolbarBtn">
+                <ons-icon icon="fa-music" size="25px" style="margin-right: 10px;"></ons-icon>
+              </ons-toolbar-button>
+              <ons-toolbar-button onclick="storyPlayerToggleVisibility();" class="whitetext toolbarBtn">
+                <ons-icon icon="fa-play-circle" size="25px" style="margin-right: 10px;"></ons-icon>
+              </ons-toolbar-button>
+              <ons-toolbar-button class="whitetext toolbarBtn">
+                <ons-icon icon="md-invert-colors" size="25px" style="margin-right: 10px;"></ons-icon>
+              </ons-toolbar-button>
+              <ons-toolbar-button class="whitetext toolbarBtn">
+                <ons-icon icon="md-favorite" size="25px" style="margin-right: 10px;"></ons-icon>
+              </ons-toolbar-button>
+              <ons-toolbar-button class="whitetext toolbarBtn">
+                <ons-icon icon="fa-share-square" size="25px" style="margin-right: 10px;"></ons-icon>
+              </ons-toolbar-button>
+            </ons-if>-->
+            <!--<ons-if platform="ios other">-->
+              <!--<ons-toolbar-button class="whitetext toolbarBtn">
+                <ons-icon icon="md-invert-colors" size="25px"></ons-icon>
+              </ons-toolbar-button>-->
+              <ons-toolbar-button id="onlyread-fav-btn" onclick="clickFavorite();" class="whitetext toolbarBtn">
+                <ons-icon id="onlyread-fav-icon" icon="md-favorite" style="display:none;" size="25px"></ons-icon>
+                <ons-icon id="onlyread-notfav-icon" class="heart-outline-icon-white" fixed-width="true" style="vertical-align: middle; margin: 0px 0px; width: 25px; height: 25px;"></ons-icon>
+              </ons-toolbar-button>
+              <ons-toolbar-button id="onlyread-share-btn" onclick="clickShare();" class="whitetext toolbarBtn">
+                <ons-icon icon="fa-share-square" size="25px"></ons-icon>
+              </ons-toolbar-button>
+            <!--</ons-if>-->
+          </div>
+
+          <!--<ons-if platform="ios other">
+            <div class="center whitetext" style="vertical-align: middle;">
+                <ons-icon icon="fa-music" size="25px"></ons-icon>
+                <ons-icon icon="fa-play-circle" size="25px"></ons-icon>
+            </div>
+
+            <div class="right whitetext" style="vertical-align: middle;">
+                <ons-icon icon="md-favorite" size="25px"></ons-icon>
+                <ons-icon icon="fa-share-square" size="25px"></ons-icon>
+            </div>
+          </ons-if>-->
+        </ons-toolbar>
+
+        <section class="main-container">
+          <div id="story-player" style="display: none;" class="player-container">
+            <h5 id="story-player-title">O Dia que tive o Melhor Sexo</h5>
+            <div>
+              <ons-row>
+                <ons-col width="60px" style="vertical-align: middle; text-align: center; line-height: 31px;">
+                  <ons-icon id="playController" icon="fa-play-circle" onclick="playSound();" size="30px"></ons-icon>
+                  <ons-icon id="pauseController" icon="md-pause-circle-outline" onclick="pauseSound();" size="35px" style="display: none;"></ons-icon>
+                </ons-col>
+                <ons-col style="vertical-align: middle;">
+                  <ons-range id="rangeController" onclick="onSlideController()" onchange="onSlideController()" modifier="material" style="width: 100%;" value="1"></ons-range>
+                </ons-col>
+                <ons-col id="audio_position" width="80px" style="vertical-align: middle; text-align: center; line-height: 31px;">
+
+                </ons-col>
+              </ons-row>
+            </div>
+          </div>
+
+          <div class="reader-container">
+            <div id="reader-text" class="reader-text text-description"></div>
+          </div>
+
+          <div style="text-align: center; width: 90%; margin: 8px 5%; margin-bottom: 10px;">
+              <ons-button class="redbutton" id="prereadratingbtn" onclick="createRatingDialog();">Avaliar Conto!</ons-button>
+          </div>
+
+          <div style="text-align: center; width: 90%; margin: 8px 5%; margin-bottom: 10px;">
+              <ons-button class="commentbtn" id="commentbtn" onclick="createRatingDialog();">Ver Comentários</ons-button>
+          </div>
+        </section>
+      </ons-page>

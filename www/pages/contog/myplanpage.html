@@ -1,0 +1,119 @@
+      <ons-page id="myplanpage">
+        <ons-toolbar class="app-toolbar">
+            <div class="left">
+              <div class="inline"><ons-toolbar-button onclick="goBack()"><ons-icon icon="fa-arrow-left" class="whitetext"></ons-icon></ons-toolbar-button></div>
+            </div>
+          </ons-toolbar>
+
+        <section class="main-container">
+
+          <div style="background: rgba(100, 100, 100, 0.1); color: rgba(0, 0, 0, 0.6); text-align: center; padding-top: 8px; padding-bottom: 8px;">
+            <h4 id="plan-usertext"></h4>
+          </div>
+
+          <div class="text-container">
+            <div class="">
+              <p class="redtext red-left-border" style="font-size: 13px;">Veja quais os nossos planos!</p>
+
+              <div class="call-selling">
+                <h4 class="whitetext">PLANOS EXCLUSIVOS</h4>
+
+                <div class="plan-container">
+                  <div class="plan-wrapper inline">
+                    <div style="background: red;border-radius: 4px;" id="plan-F">
+                      <div class="whitetext white-bottom-border">
+                        <div class="inline" style="width: 20%; box-sizing: border-box; vertical-align: middle;"><h1><b>F</b></h1></div>
+                        <div class="inline" style="width: 50%; vertical-align: middle;"><p>Plano <b>Fetish</b></p></div>
+                      </div>
+
+                      <div class="whitetext white-bottom-border">
+                        <div><p><b>Ideal para você que prefere ter momentos a só.</b></p></div>
+                      </div>
+
+                      <div class="whitetext">
+                        <div style="font-size: 10px;"><p><b>Plano Individual</b> (1 Acesso Simultâneo)</p></div>
+                      </div>
+
+                      <div class="redtext price-button">
+                        <div class="inline">
+                          <p>R$ <b>9</b>,99 Mensal</p>
+                        </div>
+                      </div>
+
+                      <div style="font-size: 1px;">
+                        <br></br>
+                      </div>
+                    </div>
+
+                    <div style="margin: auto; margin-top: 4%; margin-bottom: 4%; width: 80%;">
+                      <ons-button id="plan-btn-F" onclick="goToPayment(9.99, 'Fetish');" class="redbutton inline">Assinar</ons-button>
+                    </div>
+
+                  </div>
+                  <div class="plan-wrapper inline">
+                    <div style="background: #e01600;border-radius: 4px;" id="plan-C">
+                      <div class="whitetext white-bottom-border">
+                        <div class="inline" style="width: 20%; box-sizing: border-box; vertical-align: middle;"><h1><b>B</b></h1></div>
+                        <div class="inline" style="width: 50%; vertical-align: middle;"><p>Plano <b>Big</b></p></div>
+                      </div>
+
+                      <div class="whitetext white-bottom-border">
+                        <div><p><b>Ideal para você que gosta de ter companhia.</b></p></div>
+                      </div>
+
+                      <div class="whitetext">
+                        <div style="font-size: 10px;"><p><b>Plano Casal</b> (até 3 Acessos Simultâneos)</p></div>
+                      </div>
+
+                      <div class="redtext price-button">
+                        <div class="inline">
+                          <p>R$ <b>19</b>,99 Mensal</p>
+                        </div>
+                      </div>
+
+                      <div style="font-size: 1px;">
+                        <br></br>
+                      </div>
+                    </div>
+
+                    <div style="margin: auto; margin-top: 4%; margin-bottom: 4%; width: 80%;">
+                      <ons-button id="plan-btn-C" onclick="goToPayment(19.99, 'Big');" class="redbutton inline">Assinar</ons-button>
+                    </div>
+                  </div>
+                  <div class="plan-wrapper inline">
+                    <div style="background: #c21502;border-radius: 4px;" id="plan-S">
+                      <div class="whitetext white-bottom-border">
+                        <div class="inline" style="width: 20%; box-sizing: border-box; vertical-align: middle;"><h1><b>S</b></h1></div>
+                        <div class="inline" style="width: 50%; vertical-align: middle;"><p>Plano <b>Sixty-Nine</b></p></div>
+                      </div>
+
+                      <div class="whitetext white-bottom-border">
+                        <div><p><b>Ideal para você que gosta de ter muitas e boas companhias.</b></p></div>
+                      </div>
+
+                      <div class="whitetext">
+                        <div style="font-size: 10px;"><p><b>Plano Plus</b> (até 5 Acessos Simultâneos)</p></div>
+                      </div>
+
+                      <div class="redtext price-button">
+                        <div class="inline">
+                          <p>R$ <b>69</b>,99 Mensal</p>
+                        </div>
+                      </div>
+
+                      <div style="font-size: 1px;">
+                        <br></br>
+                      </div>
+                    </div>
+
+                    <div style="margin: auto; margin-top: 4%; margin-bottom: 4%; width: 80%;">
+                      <ons-button id="plan-btn-S" onclick="goToPayment(69.99, 'Sixty-<br></br>Nine');" class="redbutton inline">Assinar</ons-button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </ons-page>

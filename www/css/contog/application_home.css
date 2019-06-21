@@ -1,0 +1,2167 @@
+/* This is a CSS file */
+@font-face {
+    font-family: 'leelawadee';
+    src: url('css/contog/leelawadee-ui-semilight-normal.ttf');
+}
+
+/*html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  font-family: leelawadee !important;
+}*/
+
+          .app-toolbar {
+
+            background: rgba(199,13,0,1);
+            background: -moz-linear-gradient(left, rgba(199,13,0,1) 0%, rgba(199,13,0,1) 0%, rgba(255,26,0,1) 52%, rgba(199,13,0,1) 100%);
+            background: -webkit-gradient(left top, right top, color-stop(0%, rgba(199,13,0,1)), color-stop(0%, rgba(199,13,0,1)), color-stop(52%, rgb(255, 215, 210)), color-stop(100%, rgba(199,13,0,1)));
+            background: -webkit-linear-gradient(left, rgba(199,13,0,1) 0%, rgba(199,13,0,1) 0%, rgba(255,26,0,1) 52%, rgba(199,13,0,1) 100%);
+            background: -o-linear-gradient(left, rgba(199,13,0,1) 0%, rgba(199,13,0,1) 0%, rgba(255,26,0,1) 52%, rgba(199,13,0,1) 100%);
+            background: -ms-linear-gradient(left, rgba(199,13,0,1) 0%, rgba(199,13,0,1) 0%, rgba(255,26,0,1) 52%, rgba(199,13,0,1) 100%);
+            background: linear-gradient(to right, rgba(199,13,0,1) 0%, rgba(199,13,0,1) 0%, rgba(255,26,0,1) 52%, rgba(199,13,0,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c70d00', endColorstr='#c70d00', GradientType=1 );
+          }
+
+          .tabbar {
+            background: rgba(199,13,0,1);
+            background: -moz-linear-gradient(left, rgba(199,13,0,1) 0%, rgba(199,13,0,1) 0%, rgba(242,24,0,1) 52%, rgba(199,13,0,1) 100%);
+            background: -webkit-gradient(left top, right top, color-stop(0%, rgba(199,13,0,1)), color-stop(0%, rgba(199,13,0,1)), color-stop(52%, rgba(242,24,0,1)), color-stop(100%, rgba(199,13,0,1)));
+            background: -webkit-linear-gradient(left, rgba(199,13,0,1) 0%, rgba(199,13,0,1) 0%, rgba(242,24,0,1) 52%, rgba(199,13,0,1) 100%);
+            background: -o-linear-gradient(left, rgba(199,13,0,1) 0%, rgba(199,13,0,1) 0%, rgba(242,24,0,1) 52%, rgba(199,13,0,1) 100%);
+            background: -ms-linear-gradient(left, rgba(199,13,0,1) 0%, rgba(199,13,0,1) 0%, rgba(242,24,0,1) 52%, rgba(199,13,0,1) 100%);
+            background: linear-gradient(to right, rgba(199,13,0,1) 0%, rgba(199,13,0,1) 0%, rgba(242,24,0,1) 52%, rgba(199,13,0,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c70d00', endColorstr='#c70d00', GradientType=1 );
+          }
+
+          .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+          }
+
+          .left {
+            text-align: left;
+          }
+
+          .right {
+            text-align: right;
+          }
+
+          .tabbar__button {
+            color: white;
+            opacity: 0.5;
+          }
+
+          :checked + .tabbar__button {
+            color: white;
+            opacity: 1;
+          }
+
+          .whitetext {
+            color: white;
+          }
+
+          .toolbar-call {
+            padding-left: 8px;
+            padding-right: 8px;
+            font-size: 20px;
+            margin-bottom: 5px;
+            vertical-align: middle;
+          }
+
+          .toolbar-call-info {
+            font-size: 17px;
+            margin-bottom: 5px;
+            vertical-align: middle;
+          }
+
+          .person-img {
+            padding-left: 8px;
+          }
+
+          .person-img img {
+            width:28px;
+            height: 28px;
+            border-radius: 50%;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            vertical-align: middle;
+          }
+
+          .logo-img {
+            width: 30%;
+          }
+
+          .logo-img img {
+            width:100%;
+          }
+
+          .inline {
+            display: inline-block;
+          }
+
+          .menu-icon {
+            vertical-align: center;
+            padding-right: 8px;
+            padding-left: 8px;
+            margin-right: 8px;
+            color: white;
+          }
+
+          .menu-icon ons-icon {
+            vertical-align: middle;
+          }
+
+          .main-container {
+            width: 100%;
+            min-height: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            background: rgba(230,230,230,1);
+            background: -moz-linear-gradient(left, rgba(230,230,230,1) 0%, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 51%, rgba(230,230,230,1) 100%);
+            background: -webkit-gradient(left top, right top, color-stop(0%, rgba(230,230,230,1)), color-stop(0%, rgba(230,230,230,1)), color-stop(51%, rgba(255,255,255,1)), color-stop(100%, rgba(230,230,230,1)));
+            background: -webkit-linear-gradient(left, rgba(230,230,230,1) 0%, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 51%, rgba(230,230,230,1) 100%);
+            background: -o-linear-gradient(left, rgba(230,230,230,1) 0%, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 51%, rgba(230,230,230,1) 100%);
+            background: -ms-linear-gradient(left, rgba(230,230,230,1) 0%, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 51%, rgba(230,230,230,1) 100%);
+            background: linear-gradient(to right, rgba(230,230,230,1) 0%, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 51%, rgba(230,230,230,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e6e6', endColorstr='#e6e6e6', GradientType=1 );
+          }
+
+          .selector-container {
+            max-width: 100%;
+            margin-top: 8px;
+            text-align: center;
+          }
+
+          .selector-container ons-select {
+            max-width: 100%;
+            font-size: 15px;
+            background-color: red;
+            margin: 4px;
+            padding: 4px;
+            border-radius: 4px;
+            box-sizing: border-box;
+          }
+
+          .selector-container option {
+            color: white;
+            background-color: red;
+          }
+
+          .selector-container select {
+            color: white;
+          }
+
+          .selector-container select {
+            background-image: linear-gradient(45deg, transparent 50%, white 50%),
+              linear-gradient(135deg, white 50%, transparent 50%);
+            background-position: calc(100% - 10px) calc(0.75em),
+              calc(100% - 5px) calc(0.75em),
+              calc(100% - 2.5em) 0.5em;
+            background-size: 5px 5px,
+              5px 5px,
+              1px 1.5em;
+            background-repeat: no-repeat;
+          }
+
+          .selector-container select:focus {
+            background-image: linear-gradient(45deg, white 50%, transparent 50%),
+              linear-gradient(135deg, transparent 50%, white 50%);
+            background-position: calc(100% - 5px) calc(0.75em),
+              calc(100% - 10px) calc(0.75em),
+              calc(100% - 2.5em) 0.5em;
+            background-size: 5px 5px,
+              5px 5px,
+              1px 1.5em;
+            background-repeat: no-repeat;
+            outline: 0;
+          }
+
+          .redbutton {
+            -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+            color: white;
+            background: red;
+            border-radius: 0px;
+            padding: 8px;
+            font-weight: bold;
+            font-size: 15px;
+            border-radius: 4px;
+          }
+
+          .commentbtn {
+            -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+            color: red;
+            background: transparent;
+            padding: 8px;
+            font-weight: bold;
+            font-size: 15px;
+            border-radius: 4px;
+            border: 1 solid red;
+          }
+
+          .comment-rating {
+            font-family: leelawadee !important;
+            display: inline-block;
+            margin: 15px;
+            font-size: 18px;
+          }
+
+          .comment-content {
+            font-family: leelawadee !important;
+            text-align: justify;
+            padding-top: 40px;
+            padding-left: 10px;
+            padding-bottom: 20px;
+            font-size: 20px;
+          }
+
+          .comment-rating ons-icon {
+            margin-right: 8px;
+          }
+
+          .transparentC {
+            background: transparent;
+          }
+
+          .redtext {
+            color: red;
+          }
+
+          .bold {
+            font-weight: bold;
+          }
+
+          .centered-text {
+            text-align: center;
+            padding: 8px;
+          }
+
+          #prereadpage .text-container {
+            background: rgb(2,0,36);
+            background: linear-gradient(0deg, rgba(2,0,36,0.1) 0%, rgba(9,9,121,0) 50%, rgba(2,0,36,0.1) 100%);
+            border: 1px solid;
+            border-color: rgba(255, 0, 0, 0.1);
+            border-radius: 4px;
+            padding: 4px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            box-sizing: border-box;
+            font-family: leelawadee !important;
+          }
+
+          #subscriber_home .text-container,
+          #fulllist .text-container {
+            background-color: transparent;
+            border: 0px;
+            border-radius: 4px;
+            border-bottom: 1px solid;
+            border-top: 1px solid;
+            border-color: rgba(255, 0, 0, 0.1);
+            padding: 4px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            box-sizing: border-box;
+            font-family: leelawadee !important;  
+            -webkit-transition: all .3s ease-in-out;
+            -moz-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
+            -ms-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+          }
+
+          #subscriber_home .text-container:hover,
+          #fulllist .text-container:hover {
+            /*background-image: linear-gradient(0deg, rgba(2,0,36,0.2) 0%, rgba(9,9,121,0) 50%, rgba(2,0,36,0.2) 100%);
+            */
+            background-color: rgba(2,0,36,0.05);
+            border-color: rgba(255, 0, 0, 0.5);
+          }
+
+          #basichome .test-container {
+            background-color: transparent;
+            border: 0px;
+            border-radius: 4px;
+            border-bottom: 1px solid;
+            border-top: 1px solid;
+            border-color: rgba(255, 0, 0, 0.1);
+            padding: 4px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            box-sizing: border-box;
+            font-family: leelawadee !important;  
+            -webkit-transition: all .3s ease-in-out;
+            -moz-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
+            -ms-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+          }
+
+          #basichome .text-container:hover {
+            /*background-image: linear-gradient(0deg, rgba(2,0,36,0.2) 0%, rgba(9,9,121,0) 50%, rgba(2,0,36,0.2) 100%);
+            */
+            background-color: rgba(2,0,36,0.05);
+            border-color: rgba(255, 0, 0, 0.5);
+          }
+
+          .story-description {
+            max-width: 100%;
+          }
+
+          .story-description .story-img-container {
+            width: 30%;
+          }
+
+          @media (min-width: 600px) {
+            .story-description .story-img-container {
+              width: 180px;
+            }
+          }
+
+          .story-description img {
+            width: 100%;
+            border-radius: 4px;
+            vertical-align: middle;
+            box-sizing: border-box;
+          }
+
+          .story-description .text-description {
+            width: 60%;
+            vertical-align: middle;
+            min-height: 50px;
+            text-align: justify;
+            text-justify: inter-word;
+            box-sizing: border-box;
+          }
+
+          .text-description h4 {
+            font-size: 20px;
+            border-left: 2px red solid;
+            padding-left: 8px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            font-weight: bold;
+            color: #cc3300;
+          }
+
+          .text-description .rating {
+            font-size: 18px;
+            color: red;
+            text-align: left;
+          }
+
+          .rating-num ons-icon {
+            margin: 0px;
+          }
+
+          .rating u {
+            font-size: 15px;
+            color: #cc3300;
+          }
+
+          .text-container .review {
+            width: 100%;
+            padding: 0px 8px;
+            box-sizing: border-box;
+          }
+
+          .review p {
+            text-align: justify;
+            color: #444;
+            font-size: 16px;
+          }
+
+          .toolbarBtn.toolbar-button--material {
+            padding: 0px 5px;
+            text-align: middle;
+          }
+
+          .toolbarBtn.toolbar-button {
+            padding: 0px 5px;
+            text-align: middle;
+          }
+
+          .call-container {
+            width: 100%;
+            padding: 0px 8px;
+            text-align: right;
+            vertical-align: middle;
+            box-sizing: border-box;
+          }
+
+          .call-selling {
+            background: black;
+            width: 100%;
+            text-align: center;
+            vertical-align: middle;
+            border-radius: 4px;
+          }
+
+          .call-selling h4 {
+            font-size: 15px;
+            font-weight: bold;
+            padding-top: 8px;
+            padding-bottom: 8px;
+          }
+
+          .favorite-call-container {
+            color: #cc3300;
+            font-size: 22px;
+            margin: 4px;
+            font-family: leelawadee;
+            font-weight: bold;
+            padding-bottom: 4px;
+            padding-left: 4px;
+            padding-right: 4px;
+            border-bottom: solid red 1px;
+          }
+
+          .plan-container {
+            margin: auto;
+            width: 100%;
+            text-align: center;
+            vertical-align: middle;
+            box-sizing: border-box;
+          }
+
+          .plan-wrapper {
+            width: 30%;
+            margin: 1.0%;
+            vertical-align: middle;
+            box-sizing: border-box;
+          }
+
+          .white-bottom-border {
+            padding-bottom: 4px;
+            border-bottom: white 1px solid;
+            margin-bottom: 4px;
+            margin-right: 4px;
+            margin-left: 4px;
+          }
+
+          .red-left-border {
+            border-left: 2px red solid;
+            padding-left: 12px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            font-weight: bold;
+            text-align: justify;
+          }
+
+          .price-button {
+            width: 80%;
+            border-radius: 50%;
+            background: white;
+            text-align: center;
+            margin: 8px auto;
+            padding: 2%;
+          }
+
+          .price-button p {
+            font-size:15px;
+          }
+
+          .price-button b {
+            font-size: 30px;
+          }
+
+          /*.custom-icon-tab:active {
+            opacity: 1;
+          }*/
+
+          .recommendation-title {
+            text-align: center;
+            color: #cc3300;
+            text-weight: bold;
+          }
+
+          /*.recommendation-c-container {
+            display:table;
+          }*/
+
+          .recommendation-c-container .ons-swiper-target {
+            vertical-align: middle;
+            display: table;
+          }
+
+          .recommendation-item {
+            display: table-cell;
+            margin: 4px;
+            background: rgb(2,0,36);
+            background: linear-gradient(0deg, rgba(2,0,36,0.1) 0%, rgba(9,9,121,0) 50%, rgba(2,0,36,0.1) 100%);
+            /*vertical-align: middle;*/
+            vertical-align: bottom;
+            text-align: center;
+            padding: 4px;
+            border-radius: 4px;
+            border: 1px solid;
+            border-color: rgba(255, 0, 0, 0.1);
+            box-sizing: border-box;
+          }
+
+          .recommendation-item img {
+            border-radius: 4px;
+            width: 110px;
+          }
+
+          .recommendation-item:hover {
+            background: linear-gradient(0deg, rgba(2,0,36,0.2) 0%, rgba(9,9,121,0) 50%, rgba(2,0,36,0.2) 100%);
+            border-color: rgba(255, 0, 0, 0.2);
+          }
+
+          .reader-container {
+            margin: 2%;
+            width: 90%;
+            font-family: leelawadee !important;
+            text-align: center;
+          }
+
+          .menu-option ons-icon {
+            margin: 4px;
+            vertical-align: middle;
+            display: inline-block;
+            color: red;
+          }
+
+          .menu-option p {
+            margin: 4px;
+            vertical-align: middle;
+            display: inline-block;
+            color: red;
+          }
+
+          .reader-toolbar {
+            margin: 2%;
+            width: 90%;
+            vertical-align: middle;
+          }
+
+          .reader-text {
+            text-align: justify;
+            color: rgba(0, 0, 0, 0.7);
+          }
+
+          .scrollbar
+          {
+            float: left;
+            height: 400px;
+            overflow-y: scroll;
+          }
+
+          .force-overflow
+          {
+
+          }
+
+          /*
+          *  STYLE 16
+          */
+
+          #style-16::-webkit-scrollbar-track
+          {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+            background-color: #F5F5F5;
+            border-radius: 10px;
+          }
+
+          #style-16::-webkit-scrollbar
+          {
+            width: 10px;
+            background-color: #F5F5F5;
+          }
+
+          #style-16::-webkit-scrollbar-thumb
+          {
+            border-radius: 10px;
+            background-color: #FFF;
+            background-image: -webkit-linear-gradient(top,
+                                  #e4f5fc 0%,
+                                  #bfe8f9 50%,
+                                  #9fd8ef 51%,
+                                  #2ab0ed 100%);
+          }
+
+.search-container {
+  width: 90%;
+  margin: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-container ons-search-input {
+  width: 100%;
+}
+
+ons-search-input input {
+  font-size: 40px;
+}
+
+.player-container {
+  color: rgba(230, 230, 230, 1);
+  text-align: center;
+  padding: 8px;
+  border-radius: 8px;
+  box-sizing: border-box;
+
+  background: rgba(36,36,36,1);
+  background: -moz-linear-gradient(left, rgba(36,36,36,1) 0%, rgba(77,77,77,1) 16%, rgba(145,145,145,1) 52%, rgba(77,77,77,1) 84%, rgba(36,36,36,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(36,36,36,1)), color-stop(16%, rgba(77,77,77,1)), color-stop(52%, rgba(145,145,145,1)), color-stop(84%, rgba(77,77,77,1)), color-stop(100%, rgba(36,36,36,1)));
+  background: -webkit-linear-gradient(left, rgba(36,36,36,1) 0%, rgba(77,77,77,1) 16%, rgba(145,145,145,1) 52%, rgba(77,77,77,1) 84%, rgba(36,36,36,1) 100%);
+  background: -o-linear-gradient(left, rgba(36,36,36,1) 0%, rgba(77,77,77,1) 16%, rgba(145,145,145,1) 52%, rgba(77,77,77,1) 84%, rgba(36,36,36,1) 100%);
+  background: -ms-linear-gradient(left, rgba(36,36,36,1) 0%, rgba(77,77,77,1) 16%, rgba(145,145,145,1) 52%, rgba(77,77,77,1) 84%, rgba(36,36,36,1) 100%);
+  background: linear-gradient(to right, rgba(36,36,36,1) 0%, rgba(77,77,77,1) 16%, rgba(145,145,145,1) 52%, rgba(77,77,77,1) 84%, rgba(36,36,36,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#242424', endColorstr='#242424', GradientType=1 );
+}
+
+.range {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(rgba(78, 78, 78, 1), rgba(78, 78, 78, 1));
+  background-position: left center;
+  background-size: 100% 2px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+.range__input {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+  vertical-align: top;
+  outline: none;
+  line-height: 1;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: linear-gradient(#bbb, #bbb);
+  background-position: left center;
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  height: 30px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+.range__input::-moz-range-track {
+  position: relative;
+  border: none;
+  background: none;
+  box-shadow: none;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+.range__input::-ms-track {
+  position: relative;
+  border: none;
+  background-color: #4e4e4e;
+  background-color: rgba(78, 78, 78, 1);
+  height: 0;
+  border-radius: 50%;
+}
+.range__input::-webkit-slider-thumb {
+  cursor: pointer;
+  position: relative;
+  height: 28px;
+  width: 28px;
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, .25), 0 3px 2px rgba(0, 0, 0, .25);
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+          appearance: none;
+  top: 0;
+  z-index: 1;
+}
+.range__input::-moz-range-thumb {
+  cursor: pointer;
+  position: relative;
+  height: 28px;
+  width: 28px;
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, .25), 0 3px 2px rgba(0, 0, 0, .25);
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+}
+.range__input::-ms-thumb {
+  cursor: pointer;
+  position: relative;
+  height: 28px;
+  width: 28px;
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, .25), 0 3px 2px rgba(0, 0, 0, .25);
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  top: 0;
+}
+.range__input::-ms-fill-lower {
+  height: 2px;
+  background-color: #bbb;
+}
+.range__input::-ms-tooltip {
+  display: none;
+}
+.range__input:disabled {
+  opacity: 1;
+  pointer-events: none;
+}
+.range__focus-ring {
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  display: none;
+  box-sizing: border-box;
+  background-clip: padding-box;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+  vertical-align: top;
+  outline: none;
+  line-height: 1;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  height: 30px;
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+}
+.range--disabled {
+  opacity: 0.3;
+  cursor: default;
+  pointer-events: none;
+  pointer-events: none;
+}
+/*~
+  name: Material Range
+  category: Range
+  elements: ons-range
+  markup: |
+    <div class="range range--material">
+      <input type="range" class="range__input range--material__input" min="0" max="100">
+      <!-- <input type="range" class="range__focus-ring range--material__focus-ring"> -->
+    </div>
+
+    <div class="range range--material range--disabled">
+      <input type="range" class="range__input range--material__input" disabled>
+      <!-- <input type="range" class="range__focus-ring range--material__focus-ring" disabled> -->
+    </div>
+*/
+.range--material {
+  position: relative;
+  background-image: linear-gradient(rgba(169, 169, 169, 1), rgba(169, 169, 169, 1));
+}
+.range--material__input {
+  background-image: linear-gradient(rgba(218, 218, 218, 1), rgba(218, 218, 218, 1));
+  background-position: center left;
+  background-size: 0% 2px;
+}
+.range--material__focus-ring {
+  display: block;
+}
+.range--material__focus-ring::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  width: 14px;
+  height: 14px;
+  border: none;
+  box-shadow: 0 0 0 9px rgba(218, 218, 218, 1);
+  background-color: rgba(218, 218, 218, 1);
+  background-color: rgba(218, 218, 218, 1);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.25s ease-out, -webkit-transform 0.25s ease-out;
+  transition: opacity 0.25s ease-out, transform 0.25s ease-out;
+  transition: opacity 0.25s ease-out, transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+.range--material__input.range__input--active + .range--material__focus-ring::-webkit-slider-thumb {
+  opacity: 0.2;
+  -webkit-transform: scale(1.5, 1.5, 1.5);
+          transform: scale(1.5, 1.5, 1.5);
+}
+.range--material__input::-webkit-slider-thumb {
+  position: relative;
+  box-sizing: border-box;
+  border: none;
+  background-color: transparent;
+  width: 14px;
+  height: 32px;
+  border-radius: 0;
+  box-shadow: none;
+  background-image: radial-gradient(circle farthest-corner, rgba(218, 218, 218, 1) 0%, rgba(218, 218, 218, 1) 6.6px, transparent 7px);
+  transition: -webkit-transform 0.1s linear;
+  transition: transform 0.1s linear;
+  transition: transform 0.1s linear, -webkit-transform 0.1s linear;
+  overflow: visible;
+}
+.range--material__input[_zero]::-webkit-slider-thumb {
+  background-image: radial-gradient(circle farthest-corner, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 4px, rgba(169, 169, 169, 1) 4px, rgba(169, 169, 169, 1) 6.4px, transparent 7px);
+}
+.range--material__input[_zero] + .range--material__focus-ring::-webkit-slider-thumb {
+  box-shadow: 0 0 0 9px rgba(169, 169, 169, 1);
+}
+.range--material__input::-moz-range-track {
+  background: none;
+}
+.range--material__input::-moz-range-thumb,
+.range--material__input:focus::-moz-range-thumb {
+  box-sizing: border-box;
+  border: none;
+  width: 14px;
+  height: 32px;
+  border-radius: 0;
+  background-color: transparent;
+  background-image: -moz-radial-gradient(circle farthest-corner, rgba(218, 218, 218, 1) 0%, rgba(218, 218, 218, 1) 6.6px, transparent 7px); /* stylelint-disable-line */
+  box-shadow: none;
+}
+.range--material__input:active::-webkit-slider-thumb,
+.range--material__input.range__input--active::-webkit-slider-thumb { /* NOTICE: ":active" does not work on Android Chrome. */
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  transition: -webkit-transform 0.1s linear;
+  transition: transform 0.1s linear;
+  transition: transform 0.1s linear, -webkit-transform 0.1s linear;
+}
+/* stylelint-disable */
+.range--disabled.range--material { /* stylelint-enable */
+  opacity: 1;
+}
+/* stylelint-disable */
+.range--disabled > .range--material__input { /* stylelint-enable */
+  background-image: none;
+}
+.range--material__input:disabled::-webkit-slider-thumb {
+  background-image: radial-gradient(circle farthest-corner, #4f4f4f 0%, #4f4f4f 4px, rgba(80, 80, 80, 1) 4.4px, rgba(80, 80, 80, 1) 7.6px, transparent 7.6px);
+  transition: none;
+}
+.range--material__input:disabled::-moz-range-thumb {
+  background-image: -moz-radial-gradient(circle farthest-corner, #4f4f4f 0%, #4f4f4f 4px, rgba(80, 80, 80, 1) 4.4px, rgba(80, 80, 80, 1) 7.6px, transparent 7.6px); /* stylelint-disable-line */
+  transition: none;
+}
+
+
+fieldset, label { margin: 0; padding: 0; }
+
+/****** Style Star Rating Widget *****/
+
+.rating-d {
+  font-size: 20px;
+  border: none;
+  float: left;
+}
+
+.rating-d > input { display: none; }
+.rating-d > ons-radio { display: none; }
+.rating-d > label:before {
+  margin: 5px;
+  display: inline-block;
+}
+
+.rating-d > label {
+  color: #ccc;
+  float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating-d > input:checked ~ label, /* show gold star when clicked */
+.rating-d > ons-radio:checked ~ label,
+.rating-d:not(:checked) > label:hover, /* hover current star */
+.rating-d:not(:checked) > label:hover ~ label { color: #d00;  } /* hover previous stars in list */
+
+.rating-d > input:checked + label:hover, /* hover current star when changing rating */
+.rating-d > input:checked ~ label:hover,
+.rating-d > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating-d > input:checked ~ label:hover ~ label { color: #f00;  }
+
+.rating-d > ons-radio:checked + label:hover, /* hover current star when changing rating */
+.rating-d > ons-radio:checked ~ label:hover,
+.rating-d > label:hover ~ ons-radio:checked ~ label, /* lighten current selection */
+.rating-d > ons-radio:checked ~ label:hover ~ label { color: #f00;  }
+
+.ratingbtn {
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+  background: transparent;
+  padding: 2px;
+  font-size: 30px;
+  color: #ccc;
+}
+
+.ratingbtn:hover {
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+  background: transparent;
+  color: #ccc;
+}
+
+
+.dialog {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+  line-height: normal;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: -apple-system, 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin: auto auto;
+  overflow: hidden;
+  min-width: 270px;
+  min-height: 100px;
+  text-align: left;
+}
+.dialog-container {
+  height: inherit;
+  min-height: inherit;
+  overflow: hidden;
+  border-radius: 4px;
+  background-color: #ff0000;
+  background-color: rgba(255, 0, 0, 1);
+  background: rgba(199,13,0,1);
+  background: -moz-linear-gradient(left, rgba(199,13,0,1) 0%, rgba(199,13,0,1) 0%, rgba(255,26,0,1) 52%, rgba(199,13,0,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(199,13,0,1)), color-stop(0%, rgba(199,13,0,1)), color-stop(52%, rgb(255, 215, 210)), color-stop(100%, rgba(199,13,0,1)));
+  background: -webkit-linear-gradient(left, rgba(199,13,0,1) 0%, rgba(199,13,0,1) 0%, rgba(255,26,0,1) 52%, rgba(199,13,0,1) 100%);
+  background: -o-linear-gradient(left, rgba(199,13,0,1) 0%, rgba(199,13,0,1) 0%, rgba(255,26,0,1) 52%, rgba(199,13,0,1) 100%);
+  background: -ms-linear-gradient(left, rgba(199,13,0,1) 0%, rgba(199,13,0,1) 0%, rgba(255,26,0,1) 52%, rgba(199,13,0,1) 100%);
+  background: linear-gradient(to right, rgba(199,13,0,1) 0%, rgba(199,13,0,1) 0%, rgba(255,26,0,1) 52%, rgba(199,13,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c70d00', endColorstr='#c70d00', GradientType=1 );
+  -webkit-mask-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC');
+  color: hsl(124.71, 0.00%, 100.00%);
+}
+.dialog-mask {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+  line-height: normal;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+/* Shared */
+.loginBtn {
+  box-sizing: border-box;
+  position: relative;
+  /* width: 13em;  - apply for fixed size */
+  margin: 0.2em;
+  padding: 0 15px 0 46px;
+  border: none;
+  text-align: left;
+  line-height: 34px;
+  white-space: nowrap;
+  border-radius: 0.2em;
+  font-size: 16px;
+  color: #FFF;
+}
+.loginBtn:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 100%;
+}
+.loginBtn:focus {
+  outline: none;
+}
+.loginBtn:active {
+  box-shadow: inset 0 0 0 32px rgba(0,0,0,0.1);
+}
+
+
+/* Facebook */
+.loginBtn--facebook {
+  background-color: #4C69BA;
+  background-image: linear-gradient(#4C69BA, #3B55A0);
+  /*font-family: "Helvetica neue", Helvetica Neue, Helvetica, Arial, sans-serif;*/
+  text-shadow: 0 -1px 0 #354C8C;
+}
+.loginBtn--facebook:before {
+  border-right: #364e92 1px solid;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_facebook.png') 6px 6px no-repeat;
+}
+.loginBtn--facebook:hover,
+.loginBtn--facebook:focus {
+  background-color: #5B7BD5;
+  background-image: linear-gradient(#5B7BD5, #4864B1);
+}
+
+
+/* Google */
+.loginBtn--google {
+  /*font-family: "Roboto", Roboto, arial, sans-serif;*/
+  background: #DD4B39;
+}
+.loginBtn--google:before {
+  border-right: #BB3F30 1px solid;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_google.png') 6px 6px no-repeat;
+}
+.loginBtn--google:hover,
+.loginBtn--google:focus {
+  background: #E74B37;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+  line-height: normal;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: -apple-system, 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  list-style-type: none;
+  text-align: left;
+  display: block;
+  -webkit-overflow-scrolling: touch;
+  overflow: hidden;
+  background-image:
+    linear-gradient(rgba(203, 42, 42, 1), rgba(203, 42, 42, 1)),
+    linear-gradient(rgba(203, 42, 42, 1), rgba(203, 42, 42, 1));
+  background-size: 100% 1px, 100% 1px;
+  background-repeat: no-repeat;
+  background-position: bottom, top;
+  border: none;
+  background-color: #181818;
+  background-color: rgba(24, 24, 24, 0);
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+  .list {
+    background-image:
+      linear-gradient(0deg, rgba(203, 42, 42, 1), rgba(203, 42, 42, 1) 50%, transparent 50%),
+      linear-gradient(180deg, rgba(203, 42, 42, 1), rgba(203, 42, 42, 1) 50%, transparent 50%);
+  }
+}
+.list-item {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  padding: 0 0 0 14px;
+  margin: 0 0 -1px 0;
+  color: #000000;
+  color: rgba(0, 0, 0, 1);
+  transition: background-color 0.2s linear;
+}
+/*~
+  name: Expandable List
+  category: List
+  elements: ons-list ons-list-item
+  markup: |
+    <ul class="list">
+      <li class="list-item list-item--expandable expanded">
+        <div class="list-item__top">
+          <div class="list-item__center">Item</div>
+          <div class="list-item__right">
+            <span class="list-item__expand-chevron"></span>
+          </div>
+        </div>
+        <div class="list-item__expandable-content">Expanded content</div>
+      </li>
+    </ul>
+*/
+.list-item__top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-ordinal-group: 1;
+  -webkit-order: 0;
+          order: 0;
+  width: 100%;
+}
+.list-item--expandable {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  border-bottom: none;
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: linear-gradient(0deg, rgba(203, 42, 42, 1), rgba(203, 42, 42, 1) 100%);
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+  .list-item--expandable {
+    background-image: linear-gradient(0deg, rgba(203, 42, 42, 1), rgba(203, 42, 42, 1) 50%, transparent 50%);
+  }
+}
+.list-item--expandable {
+  background-position-x: 14px;
+}
+.list-item__expandable-content {
+  display: none;
+  width: 100%;
+  padding: 12px 14px 12px 0;
+  box-sizing: border-box;
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+          order: 1;
+  overflow: hidden;
+}
+.list-item.expanded > .list-item__expandable-content {
+  display: block;
+  height: auto;
+}
+.list-item__left {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding: 12px 14px 12px 0;
+  -webkit-box-ordinal-group: 1;
+  -webkit-order: 0;
+          order: 0;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-align-self: stretch;
+          align-self: stretch;
+  line-height: 1.2em;
+  min-height: 44px;
+}
+.list-item__left:empty {
+  width: 0;
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+}
+.list-item__center {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+          flex-grow: 1;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+          order: 1;
+  margin-right: auto;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-align-self: stretch;
+          align-self: stretch;
+  margin-left: 0;
+  border-bottom: none;
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: linear-gradient(0deg, rgba(203, 42, 42, 1), rgba(203, 42, 42, 1) 100%);
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+  .list-item__center {
+    background-image: linear-gradient(0deg, rgba(203, 42, 42, 1), rgba(203, 42, 42, 1) 50%, transparent 50%);
+  }
+}
+.list-item__center {
+  padding: 12px 6px 12px 0;
+  line-height: 1.2em;
+  min-height: 44px;
+}
+.list-item__right {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  margin-left: auto;
+  padding: 12px 12px 12px 0;
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+          order: 2;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-align-self: stretch;
+          align-self: stretch;
+  border-bottom: none;
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: linear-gradient(0deg, rgba(203, 42, 42, 1), rgba(203, 42, 42, 1) 100%);
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+  .list-item__right {
+    background-image: linear-gradient(0deg, rgba(203, 42, 42, 1), rgba(203, 42, 42, 1) 50%, transparent 50%);
+  }
+}
+.list-item__right {
+  line-height: 1.2em;
+  min-height: 44px;
+}
+.list-header {
+  font-family: 'leelawadee';
+  margin: 0;
+  list-style: none;
+  text-align: left;
+  float: center !important;
+  display: block;
+  box-sizing: border-box;
+  padding: 0 0 0 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 20px !important;
+  font-weight: bold;
+  color: #000000;
+  color: rgba(0, 0, 0, 0.6);
+  min-height: 24px;
+  line-height: 25px;
+  text-transform: uppercase;
+  position: relative;
+  background-color: #ff0000;
+  background-color: rgba(255, 0, 0, .1);
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-image: linear-gradient(0deg, rgba(203, 42, 42, 1), rgba(203, 42, 42, 1) 100%);
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+  .list-header {
+    background-image: linear-gradient(180deg, rgba(203, 42, 42, 1), rgba(203, 42, 42, 1) 50%, transparent 50%);
+  }
+}
+
+.fulllist-btn {
+  font-weight: bold !important;
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+/*~
+  name: Noborder List
+  category: List
+  elements: ons-list ons-list-item
+  markup: |
+    <ul class="list list--noborder">
+      <li class="list-item">
+        <div class="list-item__center">Item</div>
+      </li>
+      <li class="list-item">
+        <div class="list-item__center">Item</div>
+      </li>
+    </ul>
+ */
+.list--noborder {
+  border-top: none;
+  border-bottom: none;
+  background-image: none;
+}
+/*~
+  name: Category List Header
+  category: List
+  elements: ons-list ons-list-header ons-list-item
+  markup: |
+    <ul class="list">
+      <li class="list-header">
+        Header
+      </li>
+      <li class="list-item">
+        <div class="list-item__center">Item</div>
+      </li>
+      <li class="list-item">
+        <div class="list-item__center">Item</div>
+      </li>
+      <li class="list-item">
+        <div class="list-item__center">Item</div>
+      </li>
+    </ul>
+ */
+/*~
+  name: Tappable List
+  category: List
+  elements: ons-list ons-list-item
+  markup: |
+    <ul class="list">
+      <li class="list-item list-item--tappable">
+        <div class="list-item__center">Tappable Item</div>
+      </li>
+      <li class="list-item list-item--tappable">
+        <div class="list-item__center">Tappable Item</div>
+      </li>
+      <li class="list-item list-item--tappable">
+        <div class="list-item__center">Tappable Item</div>
+      </li>
+    </ul>
+ */
+.list-item--tappable:active {
+  transition: none;
+  background-color: #262626;
+}
+/*~
+  name: Switch in List Item
+  category: List
+  elements: ons-list ons-list-item ons-switch
+  markup: |
+    <ul class="list">
+      <li class="list-item">
+        <div class="list-item__center">
+          Label
+        </div>
+        <div class="list-item__right">
+          <label class="switch">
+            <input type="checkbox" class="switch__input" checked>
+            <div class="switch__toggle">
+              <div class="switch__handle"></div>
+            </div>
+          </label>
+        </div>
+      </li>
+      <li class="list-item">
+        <div class="list-item__center">
+          Label
+        </div>
+        <div class="list-item__right">
+          <label class="switch">
+            <input type="checkbox" class="switch__input">
+            <div class="switch__toggle">
+              <div class="switch__handle"></div>
+            </div>
+          </label>
+        </div>
+      </li>
+    </ul>
+*/
+/*~
+  name: Inset List
+  category: List
+  elements: ons-list ons-list-item
+  markup: |
+    <ul class="list list--inset">
+      <li class="list-item list--inset__item list-item--chevron list-item--tappable">
+        <div class="list-item__center">List Item with Chevron</div>
+      </li>
+      <li class="list-item list--inset__item list-item--chevron list-item--tappable">
+        <div class="list-item__center">List Item with Chevron</div>
+      </li>
+    </ul>
+ */
+.list--inset {
+  margin: 0 8px;
+  border: 1px solid #cb2a2a;
+  border: 1px solid rgba(203, 42, 42, 1);
+  border-radius: 4px;
+  background-image: none;
+}
+/*~
+  name: Radio Button in List Item
+  category: List
+  elements: ons-list ons-list-item ons-input
+  markup: |
+    <ul class="list">
+      <li class="list-item list-item--tappable">
+        <div class="list-item__left">
+          <label class="radio-button">
+            <input type="radio" id="r1" class="radio-button__input" name="r" checked="checked">
+            <div class="radio-button__checkmark"></div>
+          </label>
+        </div>
+        <label for="r1" class="list-item__center">
+          Radio Button
+        </label>
+      </li>
+      <li class="list-item list-item--tappable">
+        <div class="list-item__left">
+          <label class="radio-button">
+            <input type="radio" id="r2" class="radio-button__input" name="r">
+            <div class="radio-button__checkmark"></div>
+          </label>
+        </div>
+        <label for="r2" class="list-item__center">
+          Radio Button
+        </label>
+      </li>
+    </ul>
+*/
+/*~
+  name: Checkbox in List Item
+  category: List
+  elements: ons-list ons-list-item ons-input
+  markup: |
+    <ul class="list">
+      <li class="list-item list-item--tappable">
+        <div class="list-item__left">
+          <label class="checkbox">
+            <input type="checkbox" id="checkbox1" class="checkbox__input" name="c" checked="checked">
+            <div class="checkbox__checkmark"></div>
+          </label>
+        </div>
+        <label for="checkbox1" class="list-item__center">
+          Checkbox
+        </label>
+      </li>
+      <li class="list-item list-item--tappable">
+        <div class="list-item__left">
+          <label class="checkbox">
+            <input type="checkbox" id="checkbox2" class="checkbox__input" name="c">
+            <div class="checkbox__checkmark"></div>
+          </label>
+        </div>
+        <label for="checkbox2" class="list-item__center">
+          Checkbox
+        </label>
+      </li>
+    </ul>
+*/
+/*~
+  name: No border Checkbox in List Item
+  category: List
+  elements: ons-list ons-list-item ons-input
+  markup: |
+    <ul class="list">
+      <li class="list-item list-item--tappable">
+        <div class="list-item__left">
+          <label class="checkbox checkbox--noborder">
+            <input id="s1" type="checkbox" class="checkbox__input checkbox--noborder__input">
+            <div class="checkbox__checkmark checkbox--noborder checkbox--noborder__checkmark"></div>
+          </label>
+        </div>
+        <label for="s1" class="list-item__center">
+          Checkbox
+        </label>
+      </li>
+      <li class="list-item list-item--tappable">
+        <div class="list-item__left">
+          <label class="checkbox checkbox--noborder">
+            <input id="s2" type="checkbox" class="checkbox__input checkbox--noborder__input" checked>
+            <div class="checkbox__checkmark checkbox--noborder checkbox--noborder__checkmark"></div>
+          </label>
+        </div>
+        <label for="s2" class="list-item__center">
+          Checkbox
+        </label>
+      </li>
+    </ul>
+*/
+/*~
+  name: Text Input in List Item
+  category: List
+  elements: ons-list ons-list-item ons-input
+  markup: |
+    <ul class="list">
+      <li class="list-item">
+        <div class="list-item__center">
+          <input type="text" class="text-input" placeholder="Name">
+        </div>
+      </li>
+      <li class="list-item">
+        <div class="list-item__center">
+          <input type="text" class="text-input" placeholder="Email">
+        </div>
+      </li>
+    </ul>
+*/
+/*~
+  name: Textarea in List Item
+  category: List
+  elements: ons-list ons-list-item
+  markup: |
+    <ul class="list">
+      <li class="list-item">
+        <div class="list-item__center">
+          <textarea class="textarea textarea--transparent" placeholder="Text message"></textarea>
+        </div>
+      </li>
+    </ul>
+*/
+/*~
+  name: Right Label in List Item
+  category: List
+  elements: ons-list ons-list-item
+  markup: |
+    <ul class="list">
+      <li class="list-item">
+        <div class="list-item__center">
+          Title
+        </div>
+        <div class="list-item__right">
+          <div class="list-item__label">Label</div>
+        </div>
+      </li>
+    </ul>
+*/
+.list-item__label {
+  font-size: 14px;
+  padding: 0 4px;
+  opacity: 0.6;
+}
+/*~
+  name: List Item with Subtitle
+  category: List
+  elements: ons-list ons-list-item
+  markup: |
+    <ul class="list">
+      <li class="list-item">
+        <div class="list-item__center">
+          <div class="list-item__title">
+            Title
+          </div>
+          <div class="list-item__subtitle">
+            Subtitle
+          </div>
+        </div>
+      </li>
+    </ul>
+*/
+.list-item__title {
+  -webkit-flex-basis: 100%;
+          flex-basis: 100%;
+  -webkit-align-self: flex-end;
+          align-self: flex-end;
+  -webkit-box-ordinal-group: 1;
+  -webkit-order: 0;
+          order: 0;
+}
+.list-item__subtitle {
+  opacity: 0.75;
+  font-size: 14px;
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+          order: 1;
+  -webkit-flex-basis: 100%;
+          flex-basis: 100%;
+  -webkit-align-self: flex-start;
+          align-self: flex-start;
+}
+/*~
+  name: List Item with Thumbnail
+  category: List
+  elements: ons-list ons-list-item
+  markup: |
+    <ul class="list">
+      <li class="list-item">
+        <div class="list-item__left">
+          <img class="list-item__thumbnail" src="https://placekitten.com/g/40/40" alt="Cute kitten">
+        </div>
+
+        <div class="list-item__center">
+          <div class="list-item__title">Lily</div>
+          <div class="list-item__subtitle">Very friendly cat</div>
+        </div>
+      </li>
+
+      <li class="list-item">
+        <div class="list-item__left">
+          <img class="list-item__thumbnail" src="https://placekitten.com/g/40/40" alt="Cute kitten">
+        </div>
+
+        <div class="list-item__center">
+          <div class="list-item__title">Molly</div>
+          <div class="list-item__subtitle">Loves tuna!</div>
+        </div>
+      </li>
+    </ul>
+*/
+.list-item__thumbnail {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  display: block;
+  margin: 0;
+}
+/*~
+  name: List Item with Icon
+  category: List
+  elements: ons-list ons-list-item
+  markup: |
+    <ul class="list">
+      <li class="list-item">
+        <div class="list-item__left">
+          <img class="list-item__thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAIAAAADnC86AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wwJCB8v/9zErgAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAAvSURBVFjD7c0BDQAACAMgtX+KJzWGm4MCdJK6MHVELBaLxWKxWCwWi8VisVj8MV7qBgI2A8rYpgAAAABJRU5ErkJggg==">
+        </div>
+
+        <div class="list-item__center">
+          <div class="list-item__title">Alice</div>
+          <div class="list-item__subtitle">Description</div>
+        </div>
+
+        <div class="list-item__right">
+          <i class="ion-ios-information list-item__icon"></i>
+        </div>
+      </li>
+
+      <li class="list-item">
+        <div class="list-item__left">
+          <img class="list-item__thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAIAAAADnC86AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wwJCB8v/9zErgAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAAvSURBVFjD7c0BDQAACAMgtX+KJzWGm4MCdJK6MHVELBaLxWKxWCwWi8VisVj8MV7qBgI2A8rYpgAAAABJRU5ErkJggg==">
+        </div>
+
+        <div class="list-item__center">
+          <div class="list-item__title">Bob</div>
+          <div class="list-item__subtitle">Description</div>
+        </div>
+
+        <div class="list-item__right">
+          <i class="ion-ios-information list-item__icon"></i>
+        </div>
+      </li>
+    </ul>
+*/
+.list-item__icon {
+  font-size: 22px;
+  padding: 0 6px;
+}
+/*~
+  name: Material List
+  category: List
+  elements: ons-list ons-list-item
+  markup: |
+    <ul class="list list--material">
+      <li class="list-item list-item--material">
+        <div class="list-item__center list-item--material__center">
+          <div class="list-item__title list-item--material__title">Orange</div>
+          <div class="list-item__subtitle list-item--material__subtitle">Sweet fruit that grows on trees.</div>
+        </div>
+      </li>
+      <li class="list-item list-item--material">
+        <div class="list-item__center list-item--material__center">
+          <div class="list-item__title list-item--material__title">Pear</div>
+          <div class="list-item__subtitle list-item--material__subtitle">Funny-shaped fruit.</div>
+        </div>
+      </li>
+    </ul>
+*/
+.list--material {
+  font-family: 'Roboto', 'Noto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  background-image: none;
+  background-color: rgb(184, 184, 184);
+}
+.list-item--material {
+  border: 0;
+  padding: 0 0 0 16px;
+  line-height: normal;
+}
+.list-item--material__subtitle {
+  margin-top: 4px;
+}
+.list-item--material:first-child {
+  box-shadow: none;
+}
+.list-item--material__left {
+  padding: 14px 0;
+  min-width: 56px;
+  line-height: 1;
+  min-height: 48px;
+}
+.list-item--material__left:empty,
+.list-item--material__center {
+  padding: 14px 6px 14px 0;
+  border-color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.12);
+  border-bottom: none;
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12) 100%);
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+  .list-item--material__left:empty,
+.list-item--material__center {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12) 50%, transparent 50%);
+  }
+}
+.list-item--material__left:empty,
+.list-item--material__center {
+  min-height: 48px;
+}
+.list-item--material__right {
+  padding: 14px 16px 14px 0;
+  line-height: 1;
+  border-color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.12);
+  border-bottom: none;
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12) 100%);
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+  .list-item--material__right {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12) 50%, transparent 50%);
+  }
+}
+.list-item--material__right {
+  min-height: 48px;
+}
+.list-item--material.list-item--expandable {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: none;
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12) 100%);
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+  .list-item--material.list-item--expandable {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12) 50%, transparent 50%);
+  }
+}
+.list-item--material.list-item--expandable {
+  background-position-x: 16px;
+}
+.list-item--material.list-item--longdivider,
+.list-item--material.list-item--expandable.list-item--longdivider
+ {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: none;
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12) 100%);
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+  .list-item--material.list-item--longdivider,
+.list-item--material.list-item--expandable.list-item--longdivider
+ {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12) 50%, transparent 50%);
+  }
+}
+/*~
+  name: Material List with Header
+  category: List
+  elements: ons-list ons-list-item
+  markup: |
+    <ul class="list list--material">
+      <li class="list-header list-header--material">
+        Fruits
+      </li>
+      <li class="list-item list-item--material">
+        <div class="list-item__center list-item--material__center">
+          <div class="list-item__title list-item--material__title">Orange</div>
+          <div class="list-item__subtitle list-item--material__subtitle">Sweet fruit that grows on trees.</div>
+        </div>
+      </li>
+    </ul>
+*/
+.list-header--material {
+  background: #181818;
+  background: rgba(24, 24, 24, 0);
+  border: none;
+  font-size: 40px;
+  text-transform: none;
+  margin: -1px 0 0 0;
+  color: #ff0000;
+  color: rgba(255, 0, 0, .1);
+  font-weight: bold;
+  padding: 8px 16px;
+}
+.list-header--material:not(:first-of-type) {
+  border-top: none;
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12) 100%);
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+  .list-header--material:not(:first-of-type) {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12) 50%, transparent 50%);
+  }
+}
+.list-header--material:not(:first-of-type) {
+  padding-top: 16px;
+}
+/*~
+  name: Material List with Checkboxes
+  category: List
+  elements: ons-list ons-list-item ons-input
+  markup: |
+    <ul class="list list--material">
+      <li class="list-item list-item--material">
+        <div class="list-item__left list-item--material__left">
+          <label class="checkbox checkbox--material">
+            <input type="checkbox" id="checkbox3" class="checkbox__input checkbox--material__input">
+            <div class="checkbox__checkmark checkbox--material__checkmark"></div>
+          </label>
+        </div>
+
+        <label for="checkbox3" class="list-item__center list-item--material__center">
+          <div class="list-item__title list-item--material__title">Notifications</div>
+          <div class="list-item__subtitle list-item--material__subtitle">Allow notifications</div>
+        </label>
+      </li>
+
+      <li class="list-item list-item--material">
+        <div class="list-item__left list-item--material__left">
+          <label class="checkbox checkbox--material">
+            <input type="checkbox" id="checkbox4" class="checkbox__input checkbox--material__input" checked="checked">
+            <div class="checkbox__checkmark checkbox--material__checkmark"></div>
+          </label>
+        </div>
+
+        <label for="checkbox4" class="list-item__center list-item--material__center">
+          <div class="list-item__title list-item--material__title">Sound</div>
+          <div class="list-item__subtitle list-item--material__subtitle">Hangouts message</div>
+        </label>
+      </li>
+
+    </ul>
+*/
+/*~
+  name: Material List with Thumbnails
+  category: List
+  markup: |
+    <ul class="list list--material">
+      <li class="list-item list-item--material">
+        <div class="list-item__left list-item--material__left">
+          <img class="list-item__thumbnail list-item--material__thumbnail" src="https://placekitten.com/g/42/41" alt="Cute kitten">
+        </div>
+
+        <div class="list-item__center list-item--material__center">
+          <div class="list-item__title list-item--material__title">Lily</div>
+          <div class="list-item__subtitle list-item--material__subtitle">Very friendly cat</div>
+        </div>
+      </li>
+
+      <li class="list-item list-item--material">
+        <div class="list-item__left list-item--material__left">
+          <img class="list-item__thumbnail list-item--material__thumbnail" src="https://placekitten.com/g/40/40" alt="Cute kitten">
+        </div>
+
+        <div class="list-item__center list-item--material__center">
+          <div class="list-item__title list-item--material__title">Molly</div>
+          <div class="list-item__subtitle list-item--material__subtitle">Loves tuna!</div>
+        </div>
+      </li>
+
+    </ul>
+*/
+.list-item--material__thumbnail {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+/*~
+  name: Material List with Icons
+  category: List
+  markup: |
+    <ul class="list list--material">
+      <li class="list-item list-item--material">
+        <div class="list-item__left list-item--material__left">
+          <img class="list-item__thumbnail list-item--material__thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAIAAAADnC86AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wwJCB8v/9zErgAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAAvSURBVFjD7c0BDQAACAMgtX+KJzWGm4MCdJK6MHVELBaLxWKxWCwWi8VisVj8MV7qBgI2A8rYpgAAAABJRU5ErkJggg==">
+        </div>
+
+        <div class="list-item__center list-item--material__center">
+          <div class="list-item__title list-item--material__title">Alice</div>
+          <div class="list-item__subtitle list-item--material__subtitle">Description</div>
+        </div>
+
+        <div class="list-item__right list-item--material__right">
+          <i style="color:#ccc" class="list-item__icon list-item--material__icon zmdi zmdi-comment"></i>
+        </div>
+      </li>
+
+      <li class="list-item list-item--material">
+        <div class="list-item__left list-item--material__left">
+          <img class="list-item__thumbnail list-item--material__thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAIAAAADnC86AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wwJCB8v/9zErgAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAAvSURBVFjD7c0BDQAACAMgtX+KJzWGm4MCdJK6MHVELBaLxWKxWCwWi8VisVj8MV7qBgI2A8rYpgAAAABJRU5ErkJggg==">
+        </div>
+
+        <div class="list-item__center list-item--material__center">
+          <div class="list-item__title list-item--material__title">Bob</div>
+          <div class="list-item__subtitle list-item--material__subtitle">Description</div>
+        </div>
+
+        <div class="list-item__right list-item--material__right">
+          <i style="color:#ccc" class="list-item__icon list-item--material__icon zmdi zmdi-comment"></i>
+        </div>
+      </li>
+    </ul>
+*/
+.list-item--material__icon {
+  font-size: 20px;
+  padding: 0 4px;
+}
+/*~
+  name: List Item with Chevron
+  category: List
+  elements: ons-list ons-list-item
+  markup: |
+    <ul class="list">
+      <li class="list-item list-item--chevron">
+        <div class="list-item__center">Item A</div>
+      </li>
+      <li class="list-item list-item--chevron">
+        <div class="list-item__center">Item B</div>
+        <div class="list-item__right list-item--chevron__right">
+          <div class="list-item__label">Label</div>
+        </div>
+      </li>
+    </ul>
+ */
+.list-item--chevron:before,
+.list-item__expand-chevron {
+  border-right: 2px solid #383833;
+  border-bottom: 2px solid #383833;
+  width: 7px;
+  height: 7px;
+  background-color: transparent;
+  z-index: 5;
+}
+.list-item--chevron:before {
+  position: absolute;
+  content: '';
+  right: 16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+          transform: translateY(-50%) rotate(-45deg);
+}
+.list-item__expand-chevron {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin: 1px; /* this improves alignment with normal chevrons */
+}
+.list-item--expandable.expanded .list-item__expand-chevron {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
+.list-item--chevron__right {
+  padding-right: 30px;
+}
+/*~
+  name: Nodivider List Item with Chevron
+  category: List
+  elements: ons-list ons-list-item
+  markup: |
+    <ul class="list">
+      <li class="list-item list-item--nodivider list-item--chevron">
+        <div class="list-item__center list-item--nodivider__center">Item A</div>
+      </li>
+      <li class="list-item list-item--nodivider list-item--chevron">
+        <div class="list-item__center list-item--nodivider__center">Item B</div>
+        <div class="list-item__right list-item--nodivider__right list-item--chevron__right">
+          <div class="list-item__label">Label</div>
+        </div>
+      </li>
+    </ul>
+ */
+/*~
+  name: List item without divider
+  category: List
+  markup: |
+    <ul class="list">
+      <li class="list-item list-item--nodivider">
+        <div class="list-item__center list-item--nodivider__center">Item</div>
+      </li>
+      <li class="list-item list-item--nodivider">
+        <div class="list-item__center list-item--nodivider__center">Item</div>
+      </li>
+    </ul>
+ */
+.list-item--nodivider__center,
+.list-item--nodivider__right,
+.list-item--nodivider.list-item--expandable,
+.list-item--expandable .list-item__center,
+.list-item--expandable .list-item__right {
+  border: none;
+  background-image: none;
+}
+/*~
+  name: List item with long divider
+  category: List
+  markup: |
+    <ul class="list">
+      <li class="list-item list-item--longdivider">
+        <div class="list-item__center list-item--longdivider__center">Item</div>
+      </li>
+      <li class="list-item list-item--longdivider">
+        <div class="list-item__center list-item--longdivider__center">Item</div>
+      </li>
+    </ul>
+ */
+.list-item--longdivider {
+  border-bottom: 1px solid rgba(203, 42, 42, 1);
+  border-bottom: none;
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: linear-gradient(0deg, rgba(203, 42, 42, 1), rgba(203, 42, 42, 1) 100%);
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+  .list-item--longdivider {
+    background-image: linear-gradient(0deg, rgba(203, 42, 42, 1), rgba(203, 42, 42, 1) 50%, transparent 50%);
+  }
+}
+.list-item--longdivider:last-of-type {
+  border: none;
+  background-image: none;
+}
+.list-item--longdivider__center {
+  border: none;
+  background-image: none;
+}
+.list-item--longdivider__right {
+  border: none;
+  background-image: none;
+}
+/*~
+  name: List title
+  category: List
+  markup: |
+    <div class="list-title">List Title</div>
+    <ul class="list">
+      <li class="list-item">
+        <div class="list-item__center">Item</div>
+      </li>
+      <li class="list-item">
+        <div class="list-item__center">Item</div>
+      </li>
+    </ul>
+ */
+.list-title {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+  line-height: normal;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: -apple-system, 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  display: block;
+  color: #6d6d72;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 0 0 0 16px;
+  margin: 0;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+/*~
+  name: Material List Title
+  category: List
+  markup: |
+    <h3 class="list-title list-title--material">LIST TITLE</h3>
+    <ul class="list list--material">
+      <li class="list-item list-item--material">
+        <div class="list-item__center list-item--material__center">Item</div>
+      </li>
+      <li class="list-item list-item--material">
+        <div class="list-item__center list-item--material__center">Item</div>
+      </li>
+    </ul>
+ */
+.list-title--material {
+  font-family: 'Roboto', 'Noto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  color: #757575;
+  font-size: 14px;
+  margin: 0;
+  padding: 12px 0 12px 16px;
+  font-weight: 500;
+  line-height: 24px;
+}

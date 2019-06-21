@@ -1,0 +1,63 @@
+      <ons-page id="prereadpage">
+        <ons-toolbar class="app-toolbar">
+          <div class="left">
+            <div class="inline"><ons-toolbar-button onclick="goBack()"><ons-icon icon="fa-arrow-left" class="whitetext" style="margin-left: 4px;"></ons-icon></ons-toolbar-button></div>
+            <div class="whitetext toolbar-call inline"><strong id="prereadpersonname" class="inline"></strong></div>
+            <div class="whitetext toolbar-call-info inline" id="prereadpersonsign"></div>
+            <div class="whitetext toolbar-call-info inline" id="prereadpersonstate"></div>
+          </div>
+          <div class="right">
+            <div class="whitetext toolbar-call inline"><strong id="prereadpersonplan" class="inline"></strong></div>
+            <ons-toolbar-button  class="menu-icon" onclick="openMenu(this)">
+              <ons-icon icon="ion-navicon" size="30px"></ons-icon>
+            </ons-toolbar-button>
+          </div>
+        </ons-toolbar>
+
+        <section class="main-container">
+          <div class="text-container">
+            <div class="story-description">
+              <div class="story-img-container inline left"><img id="img-preread" src="img/contog/blacklogo.png"></img></div>
+              <div class="text-description inline right">
+                <h4 id="title" class="redtext"></h4>
+                <div id="rating" class="rating"></div>
+                <div style="width: 100%; vertical-align: middle; margin-top: 8px;">
+                  <!--<div id="readButton" class="left inline" style="width: 30%; vertical-align: middle;">
+                    <ons-button class="redbutton">Ler</ons-button>
+                  </div>-->
+                  <div class="right redtext inline" style="width: 50%; vertical-align: middle;">
+                    <!--<ons-icon class="music-icon-red" fixed-width="true" style="vertical-align: middle; display: inline-block;margin: 0px 2px; width: 25px; height: 25px;" size="25px"></ons-icon>-->
+                      <!--<ons-icon class="play-icon-red" fixed-width="true" style="vertical-align: middle; display: inline-block;margin: 0px 2px; width: 25px; height: 25px;" size="25px"></ons-icon>
+                      <ons-icon class="heart-outline-icon-red" fixed-width="true" style="vertical-align: middle; display: inline-block;margin: 0px 2px; width: 25px; height: 25px;" size="25px"></ons-icon>-->
+                    </div>
+                </div>
+                <!--<div style="width: 100%; vertical-align: middle; margin-top: 8px;">
+                  <div id="downloadAudioButton" onclick="" class="left inline" style="width: 30%; vertical-align: middle;">
+                    <ons-button class="redbutton">Baixar Audio-Conto</ons-button>
+                  </div>
+                </div>-->
+              </div>
+            </div>
+
+            <div class="review">
+              <p id="prereaddescription"></p>
+            </div>
+
+            
+            <div id="readButton" style="text-align: center; width: 90%; margin: 8px 5%; margin-bottom: 10px;">
+              <ons-button class="redbutton">Ler</ons-button>
+            </div>
+
+            <div style="text-align: center; width: 90%; margin: 8px 5%; margin-bottom: 10px;">
+                <ons-button class="commentbtn" id="commentbtn-preread" onclick="createRatingDialog();">Ver Comentários</ons-button>
+            </div>
+          </div>
+
+          <p id="call-for-recommendation" style="text-align: center; margin: 8px; font-size: 15px; margin-top: 15px; color: red; font-weight:bold;"></p>
+
+          <div style="background: rgba(100, 100, 100, 0.1);" id="myC">
+            
+          </div>
+
+        </section>
+      </ons-page>

@@ -1,0 +1,14 @@
+<ons-dialog id="intro-dialog" class="dialogIntro">
+    <div style="text-align: center; padding: 10px;">
+      <div id="intro-dialog-button" style="text-align: right; margin: 0px; padding: 0px;">
+        <ons-button class="redbutton transparentC" onclick="closeIntroPopup('intro-dialog');" style="font-size: 15px; margin-right: 4px;"><ons-icon icon="fa-close" size="20px"></ons-icon></ons-button>
+      </div>
+
+      <div id="intro-dialog-content" style="text-align: center">
+        <p><b>Bem vindo(a)<span id="intro-dialog-name"></span>,</b></p>
+        <p>Agora que você escolheu seu plano, que tal conhecer o que o Conto G pode lhe oferecer?</p>
+        <ons-button class="redbutton transparentC" onclick="closeIntroPopup('intro-dialog'); openSpecificIntroPopup('intro-dialog2', 'intro_popup2.html');"><b>Quero te Conhecer!</b></ons-button>
+      </div>
+
+    </div>
+</ons-dialog>

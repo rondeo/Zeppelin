@@ -1,0 +1,582 @@
+<!DOCTYPE HTML>
+<HTML>
+ <HEAD>
+  <META charset="utf-8">
+  <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+  <META name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- ------------------------------------------------------------------- -->
+  <!-- Tirar esta parte na hora de gerar o APP -->
+    <!-- <META charset="utf-8"> -->
+    <meta http-equiv="Cache-control" content="public">
+    <meta http-equiv="Cache-control" content="private">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="Cache-control" content="no-store">
+    <meta http-equiv="Cache-control" content="must-revalidate">
+  <!-- ------------------------------------------------------------------- -->
+
+  <!--<script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.12.0/validate.min.js"></script>-->
+
+  <script src="lib/onsenui/onsenui.min.js"></script>
+  <script src="lib/localforage.min.js"></script>
+
+  <script src="js/f.js?v=45"></script>
+
+
+<!-- ------------------------------------------------------------------- -->
+<!-- Funções de interface: Apresentam informações para o operador -->
+  <script src="js/ui.js?v=45"></script>
+<!-- Funções de ações: Executam funções devido a interação do operador -->
+  <script src="js/actions.js?v=45"></script>
+<!-- Funções de tratamento: Tratam o retorno de interações com o Backend -->
+  <script src="js/trata.js?v=45"></script>
+<!-- Funções de chamadas: acionam o Backend -->
+  <script src="js/call.js?v=45"></script>
+<!-- Funções de App: Controlam as interações com Onse, etc -->
+  <script src="js/app.js?v=45"></script>
+<!-- ------------------------------------------------------------------- -->
+<!--
+  <script src="js/massagista_config.js?v=45"></script>
+
+  <script src="lib/ylir/moment.js" charset="utf-8"></script>
+  <script src="lib/ylir/rome.standalone.js" charset="utf-8"></script>
+  <script src="lib/ylir/ylir.js" charset="utf-8"></script> -->
+
+  <!-- <script src="../lib/moment.min.js."></script> -->
+  <!--<script src="lib/jquery.min.js"></script>-->
+  <script src="js/jquery-2.0.3.min.js"></script>
+  <script src="js/jquery.plugin.pullToRefresh.js"></script>
+  <!--<script src="lib/fullcalendar.min.js"></script>
+  <script src='lib/pt-br.js'></script>-->
+
+  <!-- <script src="lib/harpa.js" charset="utf-8"></script> -->
+
+  <script type="text/javascript" src="cordova.js"></script>
+  <!--<script type="text/javascript" src="lib/firebase.js"></script>-->
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
+
+  <link rel="stylesheet" type="text/css" href="topcoat/css/topcoat-mobile-light.css"/>
+  <link rel="stylesheet" type="text/css" href="css/contog/styles.css"/>
+  
+  <link rel="stylesheet" type="text/css" href="lib/onsenui/onsenui.min.css">
+  <link rel="stylesheet" type="text/css" href="lib/onsenui/onsen-css-components.min.css">
+
+  <!--<link rel="stylesheet" href="css/app.css?v=45">-->
+  <link rel="stylesheet" href="css/contog/application_home.css?v=45">
+  <link rel="stylesheet" href="css/contog/cadastro.css?v=45">
+  <link rel="stylesheet" href="css/contog/icons.css">
+  <link rel="stylesheet" href="css/contog/font-awesome.min.css">
+
+  <!-- <link href="lib/fullcalendar.min.css" rel="stylesheet">
+  <link href="lib/fullcalendar.print.min.css" rel="stylesheet" media="print"> -->
+
+  <!-- <link rel="stylesheet" href="css/geral.css?v=45"> -->
+
+  <!-- <link rel="stylesheet" href="css/massagista_config.css?v=45"> -->
+
+  <!-- <link rel="stylesheet" href="lib/ylir/ylir.css">
+  <link rel="stylesheet" href="lib/ylir/fonts/material_icon/material_icon.css">
+  <link rel="stylesheet" href="lib/ylir/fonts/roboto/roboto.css"> -->
+  <!-- <link rel="stylesheet" href="lib/harpa.css"> -->
+
+  <!-- <script src="js/play.js" charset="utf-8"></script> -->
+
+  <!--<script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />-->
+
+<style>
+/*body {
+  background-color: #fff!important;
+}*/
+/* #calendar {
+  max-width: 900px;
+  margin: 0 auto;
+
+}
+#calendar H2 {
+  font-size: 18px;
+  margin-top: 6px;
+}
+.fc-title {
+    font-size: 14px!important;
+    font-weight: 600;
+    line-height: 16px;
+}
+.fc-time > span{
+    font-size: 12px!important;
+    font-weight: 400;
+    line-height: 14px;
+}
+
+.fc-button {
+  color:#4Ba4BD;
+  background: #FFF;
+  height: 30px!important;
+  font-size: 40px;
+}
+.fc-toolbar.fc-header-toolbar {
+  margin-top: 1em;
+}
+.fc-day-grid {
+  display:none;
+}
+th.fc-day-header {
+  padding: 4px;
+  padding-left: 0px;
+  font-size: 14px;
+} */
+
+</style>
+
+  </HEAD>
+  <BODY>
+<!--------------------------------------------------------->
+<!-- NAVIGATOR -------------------------------------------->
+<!--------------------------------------------------------->
+	<!-- <ons-navigator id="myNav" page="splash.html"></ons-navigator> -->
+<ons-navigator id="myNav" page="pages/contog/splash.html"></ons-navigator>
+
+
+<!--------------------------------------------------------->
+<!-- DIALOGS ---------------------------------------------->
+<!--------------------------------------------------------->
+
+<!--------------------------------------------------------->
+<!-- TOAST ---------------------------------------------->
+<!--------------------------------------------------------->
+  <ons-toast id="toast">
+    <span id="toast-txt">texto</span><button onClick="toastOff()">OK</button>
+  </ons-toast>
+
+
+<!-------------------------------------------------------------------->
+<!-- Cria a APP e MENU SPliter -->
+<!-------------------------------------------------------------------->
+<!--  The Splitter Page -->
+<template id="home_splitter.html">
+<ons-page id="home_splitter" modifier="material">
+    <ons-splitter>
+      <ons-splitter-side id="menu" page="menu.html" side="left" width="80%" collapse swipeable></ons-splitter-side>
+      <ons-splitter-content id="content" page="app.html"></ons-splitter-content>
+    </ons-splitter>
+</ons-page>
+</template>
+
+
+<!-------------------------------------------------------------------->
+<!-------------------------------------------------------------------->
+<!-- Cria a APP -->
+<!-------------------------------------------------------------------->
+
+<template id="app.html">
+<!-- <ons-page id="app"> -->
+  <ons-page id="app">
+
+
+<!-- Dentro da APP tem várias páginas -->
+<!-- Dentro da APP tem várias páginas -->
+
+<!-------------------------------------------------------------------->
+<!-- TODAS AS PAGINA  -->
+<!-------------------------------------------------------------------->
+<!-- Barra de título -->
+  <ons-toolbar>
+    <div class="left"><ons-toolbar-button id="menuButton" onClick="openMenu();"><ons-icon icon="fa-bars"></ons-icon></ons-toolbar-button></div>
+        <!-- <div class="center fonte1"><img class="center" src="assets/img/loguinho.png" alt="iSpa" style="margin-left: 1%; vertical-align: middle;" title="iSpa" /></div> -->
+    <div class="right">
+        <!-- <ons-toolbar-button onClick="openPref();">
+            <ons-icon icon="ion-home" id="homeButton"></ons-icon>
+        </ons-toolbar-button> -->
+        <ons-toolbar-button onClick="goHome();">
+            <ons-icon icon="fa-home" id="homeButton" class="azul_ispa"></ons-icon>
+        </ons-toolbar-button>
+    </div>
+  </ons-toolbar>
+<!-- Barra de Menu embaixo -->
+
+<!-- Barra de Menu embaixo -->
+  <ons-tabbar position="bottom" id="myTab" var="myTabbar">
+    <ons-tab page="pages/home.html?v=45" id="homeTab" label="Principal" icon="fa-history" active>
+    </ons-tab>
+    <!-- <ons-tab page="solicita.html" id="tab_updates" label="Solicitações" icon="fa-bell-o">
+    </ons-tab> -->
+    <ons-tab page="pages/agenda.html?v=45" id="tab_add" label="" icon="">
+    </ons-tab>
+    <!-- <ons-tab page="home.html" id="tab_share" label="Chat" icon="fa-comment-o">
+    </ons-tab>
+    <ons-tab page="pages/terapias.html" id="tab_settings" label="Settings" icon="fa-cog">
+    </ons-tab> -->
+    <ons-tab page="pages/solicita.html?v=45" id="tab_updates" label="Solicitações" icon="fa-bell-o"  badge="3">
+    </ons-tab>
+  </ons-tabbar>
+
+
+                        <!-- Bola com logo no toolbar -->
+                        <ons-fab id="fab_logo"  position='top center' >
+                          <img class="center" src="assets/img/logo.png" alt="iSpa" style="width:30px; margin-top:20px;" title="iSpa" />
+                        </ons-fab>
+
+
+      </ons-page>
+    </template>
+<!-- FIM TODAS AS PAGINAS -->
+<!-------------------------------------------------------------------->
+
+    <template id="menu.html">
+	    <ons-page id="menu">
+    	<!-- <div style="text-align: center; margin-top: 10px;">
+		    <h1>Menu</h1>
+    	</div> -->
+      <div style="background-color:#fff">&nbsp;</div>
+      <div class="splitter_image"></div>
+      <ons-list>
+        <ons-list-item  tappable style="padding-top:20px;">
+          <span>Mudar Senha: </span><input style="margin: 6px; width:80px;" type="password" id="ns"> <input type="button" onclick="mudasenha();" value="OK">
+        </ons-list-item>
+        <!-- <ons-list-item onclick="fn.load('settings.html')" tappable>
+          Configurações
+        </ons-list-item>
+        <ons-list-item onclick="fn.load('about.html')" tappable>
+          Sobre o iSpa
+        </ons-list-item> -->
+        <ons-list-item onclick="logout();" tappable>
+          SAIR
+        </ons-list-item>
+        <!-- <a href="#" onclick='fly.d_print("debug");'>x</a>
+        <textarea id="debug"></textarea> -->
+
+      </ons-list>
+        <!-- <ons-list style="background-color: transparent;">
+          <ons-list-item onclick="showStatus();" tappable>Menu Item 1</ons-list-item>
+          <ons-list-item onclick="showStatus2();" tappable>Menu Item 2</ons-list-item>
+          <ons-list-item onclick="" tappable>Menu Item 3</ons-list-item>
+                  </ons-list><br>
+                  <ons-list style="background-color: transparent;">
+          <ons-list-header>Filtros</ons-list-header>
+          <ons-list-item onclick="" tappable>Filtro1</ons-list-item>
+          <ons-list-item onclick="" tappable>Filtro2</ons-list-item>
+          <ons-list-item onclick="" tappable>Filtro3</ons-list-item>
+        </ons-list>
+        <textarea rows=10 id="debug" style="display:none"></textarea> -->
+      </ons-page>
+    </template>
+
+  </BODY>
+  <!--<script src="https://www.lgpdvault.com/app/lgpd_loader.js"></script>-->
+  <!--<script src="https://www.lgpdvault.com/app/lgpd.js"></script>-->
+  <!--<script src="js/lgpd.js"></script>-->
+
+  <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+
+  <script>
+    // Initialize Firebase
+    var config = {
+    apiKey: "AIzaSyApAhMR8veJR7pDtkIj2J6Gd8MMl8QSeRw",
+    authDomain: "zeppelin-app-6e939.firebaseapp.com",
+    databaseURL: "https://zeppelin-app-6e939.firebaseio.com",
+    projectId: "zeppelin-app-6e939",
+    storageBucket: "zeppelin-app-6e939.appspot.com",
+    messagingSenderId: "701213717465",
+    appId: "1:701213717465:web:53c548ecfce993fd"
+  };
+    try {
+      firebase.initializeApp(config);
+    } catch (error) {
+      alert(error);
+    }
+  </script>
+
+  <!-- Add additional services that you want to use -->
+  <!--
+  <script src="https://www.gstatic.com/firebasejs/5.9,2/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-messaging.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-functions.js"></script>-->
+
+  <script>
+
+
+function erroSet(dd)
+{
+  ons.notification.alert({messageHTML:"<font>" + dd.message + "</font>", title: "<b>Falha no Set</b>"});
+}
+
+function erroGet(dd)
+{
+  ons.notification.alert({messageHTML:"<font>" + dd.message + "</font>", title: "<b>Falha no Set</b>"});
+}
+
+  function trataErroInit(d) { // TRata Erro quando quando tenta iniciar a API lgpdvault
+    ons.notification.alert({messageHTML:"<font>LGPD não pode ser acessada no momento</font>", title: "<b>Falha na conexão</b>"});
+  }
+
+  function trataSetPerfil()
+{
+  console.log("[CALL] trataSetPerfil()");
+}
+
+  /*function trataLogin(d) {
+    lgpd.d(9,"[CALL] trataCadastro()");
+    lgpd.d(9,d);
+    var dd = JSON.parse(d);
+    // Use este para as chamadas. Todas chamadas que dependerem de dados de usuário
+    window.lgpd.c.eid= dd.d[0].eid;
+    window.lgpd.c.uid= dd.d[0].uid;
+
+  }*/
+
+  </script>
+
+  <script>
+    window.media = null;
+    window.mediaTimer = null;
+    window.playTime = 0;
+
+    window.rating = 0;
+    window.field_name = "";
+    window.sign_plan_value = "";
+    window.sign_plan_name = "";
+    window.connectionTimeout = "";
+
+    window.viewTimeout = null;
+    window.currentStoryId = "";
+    window.currentListId = "";
+    window.def = null;
+
+    window.admobid = {};
+
+    window.search = instantsearch({
+      appId: '0PVRYABN55',
+      apiKey: '5045cbea108ea5fc6b2487a918f6276e',
+      indexName: 'listacontos_search',
+      routing: true
+    });
+
+
+// document.addEventListener('deviceready', function () {
+//   alert("deviceReady");
+//
+//   fly.c.device=1;
+//   var x=device.cordova;
+//   localforage.setItem('cordova', x);
+//
+//   //alert(x);
+//
+// // Initialize backgrpund mode
+//   cordova.plugins.backgroundMode.setDefaults({
+//     title: "iSpa Background",
+//     text: "iSpa is running...",
+//     color: "FF6600"
+//   });
+//   cordova.plugins.backgroundMode.enable();
+// // /
+//
+//   // Set up notification listener
+//   Cocoon.Notification.Local.on("notification", function(userData){
+//       fly.d(6,"Notification received: " + JSON.stringify(userData));
+//   });
+//
+//   Cocoon.Notification.Local.initialize(); //ready to start receiving notification callbacks
+//   Cocoon.Notification.Local.setBadgeNumber(0);
+//
+// });
+
+ons.ready(function()
+{
+  var cli = "contog";
+  var key = "MYKEY VAI TER MUITOS DIGITOS";
+
+  console.log("onsen ready");
+  try {
+    var ref = firebase.firestore().collection('serverState').doc('P4f0ttuDUrEfC8nHsaUS');
+
+    ref.get().then().then(function(doc) {
+        if (doc.exists) {
+            console.log("Document data:", doc.data());
+            if (doc.data().m == true) {
+              ons.notification.alert({messageHTML:"<font><br>Perdão, nossa plataforma está em manutenção.. Por favor, espere um pouco para acessá-la!</font>", title: "<b>Olá!</b>"});
+            } else {
+              lgpdReady();
+            }
+        } else {
+            // doc.data() will be undefined in this case
+            console.log("No such document!");
+            lgpdReady();
+        }
+    }).catch(function(error) {
+        console.log("Error getting document:", error);
+        lgpdReady();
+    });
+  } catch (e) {
+    console.log(e);
+    lgpdReady();
+  }
+});
+
+var lgpdReady = function()
+{
+  console.log("ok");
+
+  clearOldArchives();
+
+  localforage.getItem('controle').then(function (uvalue) {
+    if (!firebase) {
+      console.log("No Firebase");
+    } else console.log("Firebase");
+
+    var ref=firebase.auth();
+    ref.onAuthStateChanged(function(authData) {
+      clearInterval(window.connectionTimeout);
+      //var authData = ref.currentUser;
+      if (authData) {
+        console.log("User " + authData.uid + " is logged in ");
+        if (authData.emailVerified) {
+          goApp();
+        } else {
+          var creationDate = new Date(uvalue.creationDate);
+          var currentDate = new Date();
+          var timeDiff = Math.abs(currentDate.getTime() - creationDate.getTime());
+          var dayDifference = Math.ceil(timeDiff / (1000 * 3600 * 24));
+          
+          if (dayDifference < 3) {
+            //alert(dayDifference);
+            if (dayDifference > 2) {
+              ons.notification.alert({messageHTML:"<font><br>Notamos que você ainda não verificou seu email! Por favor, faça isso assim que possivel!</font>", title: "<b>Olá!</b>"}).then (goApp);
+            }
+            else {
+              goApp();
+            }
+          } else {
+            ons.notification.alert({messageHTML:"<font><br>3 dias se passaram sem que você confirmasse seu email! A partir de agora, sua conta só será acessível após confirmação. Abraço!</font>", title: "<b>Olá!</b>"}).then (logout);
+          }
+        }
+        //document.querySelector("#myNav").pushPage('pages/contog/login.html');
+      } else {
+        if (uvalue == null) {
+          document.querySelector('#myNav').pushPage('pages/contog/login.html');
+        } else {
+          localforage.clear().then(function() {
+              // Run this code once the database has been entirely deleted.
+              location.href='index.html';
+              localforage.setItem ('firstTime', 1);
+          }).catch(function(err) {
+              // This code runs if there were any errors
+              alert("Aconteceu um erro no Logout");
+          });
+
+          document.querySelector('#myNav').pushPage('pages/contog/login.html');
+        }
+      }
+      });
+
+    /*if (uvalue == null) {
+      document.querySelector('#myNav').pushPage('pages/contog/login.html');
+    } else if (uvalue != null && firebase.auth().currentUser == null) {
+      localforage.clear().then(function() {
+          // Run this code once the database has been entirely deleted.
+          location.href='index.html';
+          localforage.setItem ('firstTime', 1);
+      }).catch(function(err) {
+          // This code runs if there were any errors
+          alert("Aconteceu um erro no Logout");
+      });
+
+      document.querySelector('#myNav').pushPage('pages/contog/login.html');
+    } else {
+      goApp();
+    }*/
+    
+  });
+
+  document.addEventListener("postchange", onPostChange, false);
+  document.querySelector('#myNav').addEventListener("postpush", onPagePush, false);
+  document.querySelector('#myNav').addEventListener("postpop", onPagePop, false);
+
+  firebase.auth().useDeviceLanguage();
+  /*    initAds();
+
+      try {
+        // display a banner at startup
+        admob.createBannerView();
+
+        // request an interstitial ad
+        admob.requestInterstitialAd();
+
+        // request a rewarded ad
+        admob.requestRewardedAd();
+      } catch (error) {
+        console.log(error);
+      }*/
+
+  /*try {
+    // This is a JavaScript file
+    var admobid = {};
+    if( /(android)/i.test(navigator.userAgent) ) { 
+        admobid = { // for Android
+            banner: 'ca-app-pub-7052027143959248/8670897324',
+            interstitial: 'ca-app-pub-7052027143959248/5086875536'
+        };
+    } else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {
+        admobid = { // for iOS
+            banner: 'ca-app-pub-7052027143959248/4554923886',
+            interstitial: 'ca-app-pub-7052027143959248/1663847298'
+        };
+    } else {
+        admobid = { // for Windows Phone
+            banner: 'ca-app-pub-XXXXXXX',
+            // interstitial: 'ca-app-pub-XXXXXXX'
+        };
+    }
+
+    window.admobid = admobid;
+    //if (! AdMob ) { alert( 'admob plugin not ready' ); return; }
+  } catch (e) {
+    console.log(e);
+  }*/
+
+};
+// }); // ons-ready
+
+document.addEventListener('init',function(event) {
+                var page = event.target;
+
+                /*if( page.matches('#home') ) {
+                    // set page header title
+                    page.querySelector('ons-toolbar .center').innerHTML = 'Testing App';
+
+                    // clicking on header add button for adding new carousel item
+                    page.querySelector('#addInCarousel').onclick = function() {
+                        console.log(In function);
+                        var onsItem= document.createElement('ons-carousel-item');
+                        onsItem.innerHTML = '<img src=images/020.jpg style=width: 100%; height: auto;/>';
+                        document.getElementById('itemsCarousel').appendChild(onsItem);
+                    };
+                }*/
+                if (page.matches("#splash")) {
+                  //document.querySelector('#myNav').pushPage('pages/contog/login.html');
+                  try {
+                    if(AdMob) AdMob.prepareInterstitial( {adId:window.admobid.interstitial, isTesting: false, autoShow:false} );
+                  } catch (e) {
+                    console.log(e);
+                  }
+                  window.connectionTimeout = setTimeout(function() {
+                    alert("Conexão Lenta.");
+                  }, 15000);
+                }
+
+
+            }, false);
+
+function successCallback(result) {
+  console.log(result); // true - enabled, false - disabled
+}
+ 
+function errorCallback(error) {
+  console.log(error);
+}
+
+</script>
+</HTML>
