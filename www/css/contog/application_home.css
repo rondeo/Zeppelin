@@ -478,7 +478,7 @@
           .recommendation-title {
             text-align: center;
             color: #cc3300;
-            text-weight: bold;
+            font-weight: bold;
           }
 
           /*.recommendation-c-container {
@@ -554,10 +554,7 @@
             overflow-y: scroll;
           }
 
-          .force-overflow
-          {
-
-          }
+          
 
           /*
           *  STYLE 16
@@ -565,6 +562,7 @@
 
           #style-16::-webkit-scrollbar-track
           {
+            box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
             -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
             background-color: #F5F5F5;
             border-radius: 10px;
@@ -969,6 +967,8 @@ fieldset, label { margin: 0; padding: 0; }
   background: linear-gradient(to right, rgba(199,13,0,1) 0%, rgba(199,13,0,1) 0%, rgba(255,26,0,1) 52%, rgba(199,13,0,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c70d00', endColorstr='#c70d00', GradientType=1 );
   -webkit-mask-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC');
+  color: hsl(124.71, 0.00%, 100.00%);
+  mask-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC');
   color: hsl(124.71, 0.00%, 100.00%);
 }
 .dialog-mask {

@@ -45,28 +45,16 @@ html,body {
 
 }
 .gradientb{
-background: rgba(178,4,4,1);
-background: -moz-linear-gradient(left, rgba(178,4,4,1) 0%, rgba(178,4,4,1) 0%, rgba(240,47,23,1) 53%, rgba(178,4,4,1) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(178,4,4,1)), color-stop(0%, rgba(178,4,4,1)), color-stop(53%, rgba(240,47,23,1)), color-stop(100%, rgba(178,4,4,1)));
-background: -webkit-linear-gradient(left, rgba(178,4,4,1) 0%, rgba(178,4,4,1) 0%, rgba(240,47,23,1) 53%, rgba(178,4,4,1) 100%);
-background: -o-linear-gradient(left, rgba(178,4,4,1) 0%, rgba(178,4,4,1) 0%, rgba(240,47,23,1) 53%, rgba(178,4,4,1) 100%);
-background: -ms-linear-gradient(left, rgba(178,4,4,1) 0%, rgba(178,4,4,1) 0%, rgba(240,47,23,1) 53%, rgba(178,4,4,1) 100%);
-background: linear-gradient(to right, rgba(178,4,4,1) 0%, rgba(178,4,4,1) 0%, rgba(240,47,23,1) 53%, rgba(178,4,4,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b20404', endColorstr='#b20404', GradientType=1 );
-border-radius: 4px;
+background: linear-gradient(to right, #29fbec, #00e1f1, #00c6ef, #00abe5, #2c8ed1);
+border-radius: 50px;
 padding:2px 20px;
 }
 .redpage {
   background-color:red;
 }
-.cadastrobackground .page__background {background: rgba(221,0,0,1);
-background: -moz-linear-gradient(left, rgba(221,0,0,1) 0%, rgba(204,0,0,1) 0%, rgba(255,57,31,1) 51%, rgba(221,0,0,1) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(221,0,0,1)), color-stop(0%, rgba(204,0,0,1)), color-stop(51%, rgba(255,57,31,1)), color-stop(100%, rgba(221,0,0,1)));
-background: -webkit-linear-gradient(left, rgba(221,0,0,1) 0%, rgba(204,0,0,1) 0%, rgba(255,57,31,1) 51%, rgba(221,0,0,1) 100%);
-background: -o-linear-gradient(left, rgba(221,0,0,1) 0%, rgba(204,0,0,1) 0%, rgba(255,57,31,1) 51%, rgba(221,0,0,1) 100%);
-background: -ms-linear-gradient(left, rgba(221,0,0,1) 0%, rgba(204,0,0,1) 0%, rgba(255,57,31,1) 51%, rgba(221,0,0,1) 100%);
-background: linear-gradient(to right, rgba(221,0,0,1) 0%, rgba(204,0,0,1) 0%, rgba(255,57,31,1) 51%, rgba(221,0,0,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd0000', endColorstr='#dd0000', GradientType=1 );}
+.cadastrobackground .page__background {
+background: white;
+}
 .genderradio {
 margin: 8px;
 width: 100%;
@@ -870,4 +858,49 @@ span b {
   /*width:65%;*/
   display: inline-block;
 
+}
+.inputs {
+  position: relative;
+  text-align: center;
+}
+.usericonbox {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 30px;
+  height: 32px;
+  background-color: #2af;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.inputs input {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  height: 30px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 0px;
+  box-shadow: 0px 0px 5px 0px rgba(120,120,120,0.5);
+}
+.input-icon
+{
+  position: absolute;
+  left: 44px;
+  margin-top: 2px;
+  margin-left: 2px;
+  padding-right: 3px;
+  color: #d8d8d8;
+  z-index: 4
+}
+.input-icon-user
+{
+  position: absolute;
+  left: -44px;
+  margin-top: 2px;
+  margin-left: 2px;
+  padding-right: 3px;
+  color: #d8d8d8;
+  z-index: 4
 }
